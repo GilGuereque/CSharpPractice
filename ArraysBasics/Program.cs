@@ -32,6 +32,7 @@ foreach (string name in names)
 }
 */
 
+/*
 // Exercise for Foreach Challenge
 // create the array
 int[] inventory = { 200, 450, 700, 175, 250 };
@@ -49,5 +50,16 @@ foreach (int item in inventory)
 
 // Display the final value of the sum:
 Console.WriteLine($"We have {sum} items in our inventory.");
+*/
 
+// Challenge to find Fraudulent Order IDs for Module:
+string[] fraudulentOrderIDs = {"B123","C234","A345","C15","B177","G3003","C235","B179"};
 
+// foreach to iterate through each element of the array:
+foreach (string orderID in fraudulentOrderIDs)
+{
+    if (orderID.StartsWith("B"))
+    {
+        Console.WriteLine(orderID);
+    }
+}

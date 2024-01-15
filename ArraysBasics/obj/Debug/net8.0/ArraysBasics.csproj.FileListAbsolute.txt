@@ -3,3 +3,13 @@ D:\Academia\Projects\CSharpProjects\CSharpPractice\ArraysBasics\obj\Debug\net8.0
 D:\Academia\Projects\CSharpProjects\CSharpPractice\ArraysBasics\obj\Debug\net8.0\ArraysBasics.AssemblyInfo.cs
 D:\Academia\Projects\CSharpProjects\CSharpPractice\ArraysBasics\obj\Debug\net8.0\ArraysBasics.csproj.CoreCompileInputs.cache
 D:\Academia\Projects\CSharpProjects\CSharpPractice\ArraysBasics\obj\Debug\net8.0\ArraysBasics.sourcelink.json
+D:\Academia\Projects\CSharpProjects\CSharpPractice\ArraysBasics\bin\Debug\net8.0\ArraysBasics.exe
+D:\Academia\Projects\CSharpProjects\CSharpPractice\ArraysBasics\bin\Debug\net8.0\ArraysBasics.deps.json
+D:\Academia\Projects\CSharpProjects\CSharpPractice\ArraysBasics\bin\Debug\net8.0\ArraysBasics.runtimeconfig.json
+D:\Academia\Projects\CSharpProjects\CSharpPractice\ArraysBasics\bin\Debug\net8.0\ArraysBasics.dll
+D:\Academia\Projects\CSharpProjects\CSharpPractice\ArraysBasics\bin\Debug\net8.0\ArraysBasics.pdb
+D:\Academia\Projects\CSharpProjects\CSharpPractice\ArraysBasics\obj\Debug\net8.0\ArraysBasics.dll
+D:\Academia\Projects\CSharpProjects\CSharpPractice\ArraysBasics\obj\Debug\net8.0\refint\ArraysBasics.dll
+D:\Academia\Projects\CSharpProjects\CSharpPractice\ArraysBasics\obj\Debug\net8.0\ArraysBasics.pdb
+D:\Academia\Projects\CSharpProjects\CSharpPractice\ArraysBasics\obj\Debug\net8.0\ArraysBasics.genruntimeconfig.cache
+D:\Academia\Projects\CSharpProjects\CSharpPractice\ArraysBasics\obj\Debug\net8.0\ref\ArraysBasics.dll

@@ -1,0 +1,15 @@
+D:\Academia\Projects\CSharpProjects\CSharpPractice\SubscriptionRates\obj\Debug\net8.0\SubscriptionRates.GeneratedMSBuildEditorConfig.editorconfig
+D:\Academia\Projects\CSharpProjects\CSharpPractice\SubscriptionRates\obj\Debug\net8.0\SubscriptionRates.AssemblyInfoInputs.cache
+D:\Academia\Projects\CSharpProjects\CSharpPractice\SubscriptionRates\obj\Debug\net8.0\SubscriptionRates.AssemblyInfo.cs
+D:\Academia\Projects\CSharpProjects\CSharpPractice\SubscriptionRates\obj\Debug\net8.0\SubscriptionRates.csproj.CoreCompileInputs.cache
+D:\Academia\Projects\CSharpProjects\CSharpPractice\SubscriptionRates\obj\Debug\net8.0\SubscriptionRates.sourcelink.json
+D:\Academia\Projects\CSharpProjects\CSharpPractice\SubscriptionRates\bin\Debug\net8.0\SubscriptionRates.exe
+D:\Academia\Projects\CSharpProjects\CSharpPractice\SubscriptionRates\bin\Debug\net8.0\SubscriptionRates.deps.json
+D:\Academia\Projects\CSharpProjects\CSharpPractice\SubscriptionRates\bin\Debug\net8.0\SubscriptionRates.runtimeconfig.json
+D:\Academia\Projects\CSharpProjects\CSharpPractice\SubscriptionRates\bin\Debug\net8.0\SubscriptionRates.dll
+D:\Academia\Projects\CSharpProjects\CSharpPractice\SubscriptionRates\bin\Debug\net8.0\SubscriptionRates.pdb
+D:\Academia\Projects\CSharpProjects\CSharpPractice\SubscriptionRates\obj\Debug\net8.0\SubscriptionRates.dll
+D:\Academia\Projects\CSharpProjects\CSharpPractice\SubscriptionRates\obj\Debug\net8.0\refint\SubscriptionRates.dll
+D:\Academia\Projects\CSharpProjects\CSharpPractice\SubscriptionRates\obj\Debug\net8.0\SubscriptionRates.pdb
+D:\Academia\Projects\CSharpProjects\CSharpPractice\SubscriptionRates\obj\Debug\net8.0\SubscriptionRates.genruntimeconfig.cache
+D:\Academia\Projects\CSharpProjects\CSharpPractice\SubscriptionRates\obj\Debug\net8.0\ref\SubscriptionRates.dll

@@ -1,0 +1,5 @@
+D:\Academia\Projects\CSharpProjects\CSharpPractice\ArraysBasics\obj\Debug\net8.0\ArraysBasics.GeneratedMSBuildEditorConfig.editorconfig
+D:\Academia\Projects\CSharpProjects\CSharpPractice\ArraysBasics\obj\Debug\net8.0\ArraysBasics.AssemblyInfoInputs.cache
+D:\Academia\Projects\CSharpProjects\CSharpPractice\ArraysBasics\obj\Debug\net8.0\ArraysBasics.AssemblyInfo.cs
+D:\Academia\Projects\CSharpProjects\CSharpPractice\ArraysBasics\obj\Debug\net8.0\ArraysBasics.csproj.CoreCompileInputs.cache
+D:\Academia\Projects\CSharpProjects\CSharpPractice\ArraysBasics\obj\Debug\net8.0\ArraysBasics.sourcelink.json

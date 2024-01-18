@@ -1,0 +1,15 @@
+D:\Academia\Projects\CSharpProjects\CSharpPractice\Comments\bin\Debug\net8.0\Comments.exe
+D:\Academia\Projects\CSharpProjects\CSharpPractice\Comments\bin\Debug\net8.0\Comments.deps.json
+D:\Academia\Projects\CSharpProjects\CSharpPractice\Comments\bin\Debug\net8.0\Comments.runtimeconfig.json
+D:\Academia\Projects\CSharpProjects\CSharpPractice\Comments\bin\Debug\net8.0\Comments.dll
+D:\Academia\Projects\CSharpProjects\CSharpPractice\Comments\bin\Debug\net8.0\Comments.pdb
+D:\Academia\Projects\CSharpProjects\CSharpPractice\Comments\obj\Debug\net8.0\Comments.GeneratedMSBuildEditorConfig.editorconfig
+D:\Academia\Projects\CSharpProjects\CSharpPractice\Comments\obj\Debug\net8.0\Comments.AssemblyInfoInputs.cache
+D:\Academia\Projects\CSharpProjects\CSharpPractice\Comments\obj\Debug\net8.0\Comments.AssemblyInfo.cs
+D:\Academia\Projects\CSharpProjects\CSharpPractice\Comments\obj\Debug\net8.0\Comments.csproj.CoreCompileInputs.cache
+D:\Academia\Projects\CSharpProjects\CSharpPractice\Comments\obj\Debug\net8.0\Comments.sourcelink.json
+D:\Academia\Projects\CSharpProjects\CSharpPractice\Comments\obj\Debug\net8.0\Comments.dll
+D:\Academia\Projects\CSharpProjects\CSharpPractice\Comments\obj\Debug\net8.0\refint\Comments.dll
+D:\Academia\Projects\CSharpProjects\CSharpPractice\Comments\obj\Debug\net8.0\Comments.pdb
+D:\Academia\Projects\CSharpProjects\CSharpPractice\Comments\obj\Debug\net8.0\Comments.genruntimeconfig.cache
+D:\Academia\Projects\CSharpProjects\CSharpPractice\Comments\obj\Debug\net8.0\ref\Comments.dll

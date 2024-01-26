@@ -1,0 +1,15 @@
+D:\Academia\Projects\CSharpProjects\CSharpPractice\GradeForeach\bin\Debug\net8.0\GradeForeach.exe
+D:\Academia\Projects\CSharpProjects\CSharpPractice\GradeForeach\bin\Debug\net8.0\GradeForeach.deps.json
+D:\Academia\Projects\CSharpProjects\CSharpPractice\GradeForeach\bin\Debug\net8.0\GradeForeach.runtimeconfig.json
+D:\Academia\Projects\CSharpProjects\CSharpPractice\GradeForeach\bin\Debug\net8.0\GradeForeach.dll
+D:\Academia\Projects\CSharpProjects\CSharpPractice\GradeForeach\bin\Debug\net8.0\GradeForeach.pdb
+D:\Academia\Projects\CSharpProjects\CSharpPractice\GradeForeach\obj\Debug\net8.0\GradeForeach.GeneratedMSBuildEditorConfig.editorconfig
+D:\Academia\Projects\CSharpProjects\CSharpPractice\GradeForeach\obj\Debug\net8.0\GradeForeach.AssemblyInfoInputs.cache
+D:\Academia\Projects\CSharpProjects\CSharpPractice\GradeForeach\obj\Debug\net8.0\GradeForeach.AssemblyInfo.cs
+D:\Academia\Projects\CSharpProjects\CSharpPractice\GradeForeach\obj\Debug\net8.0\GradeForeach.csproj.CoreCompileInputs.cache
+D:\Academia\Projects\CSharpProjects\CSharpPractice\GradeForeach\obj\Debug\net8.0\GradeForeach.sourcelink.json
+D:\Academia\Projects\CSharpProjects\CSharpPractice\GradeForeach\obj\Debug\net8.0\GradeForeach.dll
+D:\Academia\Projects\CSharpProjects\CSharpPractice\GradeForeach\obj\Debug\net8.0\refint\GradeForeach.dll
+D:\Academia\Projects\CSharpProjects\CSharpPractice\GradeForeach\obj\Debug\net8.0\GradeForeach.pdb
+D:\Academia\Projects\CSharpProjects\CSharpPractice\GradeForeach\obj\Debug\net8.0\GradeForeach.genruntimeconfig.cache
+D:\Academia\Projects\CSharpProjects\CSharpPractice\GradeForeach\obj\Debug\net8.0\ref\GradeForeach.dll

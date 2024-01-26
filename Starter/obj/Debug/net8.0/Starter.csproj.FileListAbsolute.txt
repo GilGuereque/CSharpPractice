@@ -1,0 +1,15 @@
+D:\Academia\Projects\CSharpProjects\CSharpPractice\Starter\bin\Debug\net8.0\Starter.exe
+D:\Academia\Projects\CSharpProjects\CSharpPractice\Starter\bin\Debug\net8.0\Starter.deps.json
+D:\Academia\Projects\CSharpProjects\CSharpPractice\Starter\bin\Debug\net8.0\Starter.runtimeconfig.json
+D:\Academia\Projects\CSharpProjects\CSharpPractice\Starter\bin\Debug\net8.0\Starter.dll
+D:\Academia\Projects\CSharpProjects\CSharpPractice\Starter\bin\Debug\net8.0\Starter.pdb
+D:\Academia\Projects\CSharpProjects\CSharpPractice\Starter\obj\Debug\net8.0\Starter.GeneratedMSBuildEditorConfig.editorconfig
+D:\Academia\Projects\CSharpProjects\CSharpPractice\Starter\obj\Debug\net8.0\Starter.AssemblyInfoInputs.cache
+D:\Academia\Projects\CSharpProjects\CSharpPractice\Starter\obj\Debug\net8.0\Starter.AssemblyInfo.cs
+D:\Academia\Projects\CSharpProjects\CSharpPractice\Starter\obj\Debug\net8.0\Starter.csproj.CoreCompileInputs.cache
+D:\Academia\Projects\CSharpProjects\CSharpPractice\Starter\obj\Debug\net8.0\Starter.sourcelink.json
+D:\Academia\Projects\CSharpProjects\CSharpPractice\Starter\obj\Debug\net8.0\Starter.dll
+D:\Academia\Projects\CSharpProjects\CSharpPractice\Starter\obj\Debug\net8.0\refint\Starter.dll
+D:\Academia\Projects\CSharpProjects\CSharpPractice\Starter\obj\Debug\net8.0\Starter.pdb
+D:\Academia\Projects\CSharpProjects\CSharpPractice\Starter\obj\Debug\net8.0\Starter.genruntimeconfig.cache
+D:\Academia\Projects\CSharpProjects\CSharpPractice\Starter\obj\Debug\net8.0\ref\Starter.dll

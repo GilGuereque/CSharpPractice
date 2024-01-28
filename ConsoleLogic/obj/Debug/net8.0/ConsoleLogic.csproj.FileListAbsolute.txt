@@ -1,0 +1,15 @@
+D:\Academia\Projects\CSharpProjects\CSharpPractice\ConsoleLogic\bin\Debug\net8.0\ConsoleLogic.exe
+D:\Academia\Projects\CSharpProjects\CSharpPractice\ConsoleLogic\bin\Debug\net8.0\ConsoleLogic.deps.json
+D:\Academia\Projects\CSharpProjects\CSharpPractice\ConsoleLogic\bin\Debug\net8.0\ConsoleLogic.runtimeconfig.json
+D:\Academia\Projects\CSharpProjects\CSharpPractice\ConsoleLogic\bin\Debug\net8.0\ConsoleLogic.dll
+D:\Academia\Projects\CSharpProjects\CSharpPractice\ConsoleLogic\bin\Debug\net8.0\ConsoleLogic.pdb
+D:\Academia\Projects\CSharpProjects\CSharpPractice\ConsoleLogic\obj\Debug\net8.0\ConsoleLogic.GeneratedMSBuildEditorConfig.editorconfig
+D:\Academia\Projects\CSharpProjects\CSharpPractice\ConsoleLogic\obj\Debug\net8.0\ConsoleLogic.AssemblyInfoInputs.cache
+D:\Academia\Projects\CSharpProjects\CSharpPractice\ConsoleLogic\obj\Debug\net8.0\ConsoleLogic.AssemblyInfo.cs
+D:\Academia\Projects\CSharpProjects\CSharpPractice\ConsoleLogic\obj\Debug\net8.0\ConsoleLogic.csproj.CoreCompileInputs.cache
+D:\Academia\Projects\CSharpProjects\CSharpPractice\ConsoleLogic\obj\Debug\net8.0\ConsoleLogic.sourcelink.json
+D:\Academia\Projects\CSharpProjects\CSharpPractice\ConsoleLogic\obj\Debug\net8.0\ConsoleLogic.dll
+D:\Academia\Projects\CSharpProjects\CSharpPractice\ConsoleLogic\obj\Debug\net8.0\refint\ConsoleLogic.dll
+D:\Academia\Projects\CSharpProjects\CSharpPractice\ConsoleLogic\obj\Debug\net8.0\ConsoleLogic.pdb
+D:\Academia\Projects\CSharpProjects\CSharpPractice\ConsoleLogic\obj\Debug\net8.0\ConsoleLogic.genruntimeconfig.cache
+D:\Academia\Projects\CSharpProjects\CSharpPractice\ConsoleLogic\obj\Debug\net8.0\ref\ConsoleLogic.dll

@@ -19,21 +19,32 @@
 // string myValue = "a";
 // Console.WriteLine(myValue != "a");
 
-// comparison operators
-Console.WriteLine(1 > 2);
-Console.WriteLine(1 < 2);
-Console.WriteLine(1 >= 1);
-Console.WriteLine(1 <= 1);
+// // comparison operators
+// Console.WriteLine(1 > 2);
+// Console.WriteLine(1 < 2);
+// Console.WriteLine(1 >= 1);
+// Console.WriteLine(1 <= 1);
 
-// // Methods that return a boolean
+// // // Methods that return a boolean
+// // string pangram = "The quick brown fox jumps over the lazy dog.";
+// // Console.WriteLine(pangram.Contains("fox"));
+// // Console.WriteLine(pangram.Contains("cow"));
+
+// // // these two lines should create the same output
+// // Console.WriteLine(pangram.Contains("fox") == false);
+// // Console.WriteLine(!pangram.Contains("fox"));
+
 // string pangram = "The quick brown fox jumps over the lazy dog.";
-// Console.WriteLine(pangram.Contains("fox"));
-// Console.WriteLine(pangram.Contains("cow"));
-
-// // these two lines should create the same output
-// Console.WriteLine(pangram.Contains("fox") == false);
 // Console.WriteLine(!pangram.Contains("fox"));
+// Console.WriteLine(!pangram.Contains("cow"));
 
-string pangram = "The quick brown fox jumps over the lazy dog.";
-Console.WriteLine(!pangram.Contains("fox"));
-Console.WriteLine(!pangram.Contains("cow"));
+// CONDITIONAL OPERATORS
+// int saleAmount = 1001;
+// int discount = saleAmount > 1000 ? 100 : 50;
+// This is saying the discount will either be
+// 100 if the saleAmount is greater than 1000 else 50
+// Console.WriteLine($"Discount: {discount}");
+
+// You can also do it inline
+int saleAmount = 1001;
+Console.WriteLine($"")

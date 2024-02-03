@@ -45,16 +45,37 @@
 // 100 if the saleAmount is greater than 1000 else 50
 // Console.WriteLine($"Discount: {discount}");
 
-// You can also do it inline
-int saleAmount = 1001;
-Console.WriteLine($"Discount: {saleAmount}/t");
+// // You can also do it inline
+// int saleAmount = 1001;
+// Console.WriteLine($"Discount: {saleAmount}/t");
 
 
-// coin flipper possible solution:
-Random coin = new Random();
-int flip = coin.Next(0, 2);
-Console.WriteLine((flip == 0) ? "heads": "tails");
+// // coin flipper possible solution:
+// Random coin = new Random();
+// int flip = coin.Next(0, 2);
+// Console.WriteLine((flip == 0) ? "heads": "tails");
 
 // // another possible coin flip solution
 // Random coin = new Random();
 // Console.WriteLine((coin.Next(0, 2) == 0) ? "heads": "tails");
+
+//
+string permission = "Admin|Manager";
+int level = 55;
+
+if ( permission.Contains("Admin") && level > 55 )
+{
+    Console.WriteLine("Welcome, Super Admin user.");
+} 
+else if ( permission.Contains("Manager") && level < 20 )
+{
+    Console.WriteLine("You do not have sufficient privileges.");
+}
+else if ( permission.Contains("Admin") && level <= 55 )
+{
+    Console.WriteLine("Contact an Admin for access.");
+}
+else if ( !permission.Contains("Manager") && !permission.Contains("Admin") )
+{
+    Console.WriteLine("You do not have sufficient privileges.");
+}

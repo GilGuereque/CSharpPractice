@@ -1,0 +1,15 @@
+D:\Academia\Projects\CSharpProjects\CSharpPractice\IterationLoops\bin\Debug\net8.0\IterationLoops.exe
+D:\Academia\Projects\CSharpProjects\CSharpPractice\IterationLoops\bin\Debug\net8.0\IterationLoops.deps.json
+D:\Academia\Projects\CSharpProjects\CSharpPractice\IterationLoops\bin\Debug\net8.0\IterationLoops.runtimeconfig.json
+D:\Academia\Projects\CSharpProjects\CSharpPractice\IterationLoops\bin\Debug\net8.0\IterationLoops.dll
+D:\Academia\Projects\CSharpProjects\CSharpPractice\IterationLoops\bin\Debug\net8.0\IterationLoops.pdb
+D:\Academia\Projects\CSharpProjects\CSharpPractice\IterationLoops\obj\Debug\net8.0\IterationLoops.GeneratedMSBuildEditorConfig.editorconfig
+D:\Academia\Projects\CSharpProjects\CSharpPractice\IterationLoops\obj\Debug\net8.0\IterationLoops.AssemblyInfoInputs.cache
+D:\Academia\Projects\CSharpProjects\CSharpPractice\IterationLoops\obj\Debug\net8.0\IterationLoops.AssemblyInfo.cs
+D:\Academia\Projects\CSharpProjects\CSharpPractice\IterationLoops\obj\Debug\net8.0\IterationLoops.csproj.CoreCompileInputs.cache
+D:\Academia\Projects\CSharpProjects\CSharpPractice\IterationLoops\obj\Debug\net8.0\IterationLoops.sourcelink.json
+D:\Academia\Projects\CSharpProjects\CSharpPractice\IterationLoops\obj\Debug\net8.0\IterationLoops.dll
+D:\Academia\Projects\CSharpProjects\CSharpPractice\IterationLoops\obj\Debug\net8.0\refint\IterationLoops.dll
+D:\Academia\Projects\CSharpProjects\CSharpPractice\IterationLoops\obj\Debug\net8.0\IterationLoops.pdb
+D:\Academia\Projects\CSharpProjects\CSharpPractice\IterationLoops\obj\Debug\net8.0\IterationLoops.genruntimeconfig.cache
+D:\Academia\Projects\CSharpProjects\CSharpPractice\IterationLoops\obj\Debug\net8.0\ref\IterationLoops.dll

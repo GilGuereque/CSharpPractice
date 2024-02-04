@@ -1,0 +1,15 @@
+D:\Academia\Projects\CSharpProjects\CSharpPractice\VariableScopes\bin\Debug\net8.0\VariableScopes.exe
+D:\Academia\Projects\CSharpProjects\CSharpPractice\VariableScopes\bin\Debug\net8.0\VariableScopes.deps.json
+D:\Academia\Projects\CSharpProjects\CSharpPractice\VariableScopes\bin\Debug\net8.0\VariableScopes.runtimeconfig.json
+D:\Academia\Projects\CSharpProjects\CSharpPractice\VariableScopes\bin\Debug\net8.0\VariableScopes.dll
+D:\Academia\Projects\CSharpProjects\CSharpPractice\VariableScopes\bin\Debug\net8.0\VariableScopes.pdb
+D:\Academia\Projects\CSharpProjects\CSharpPractice\VariableScopes\obj\Debug\net8.0\VariableScopes.GeneratedMSBuildEditorConfig.editorconfig
+D:\Academia\Projects\CSharpProjects\CSharpPractice\VariableScopes\obj\Debug\net8.0\VariableScopes.AssemblyInfoInputs.cache
+D:\Academia\Projects\CSharpProjects\CSharpPractice\VariableScopes\obj\Debug\net8.0\VariableScopes.AssemblyInfo.cs
+D:\Academia\Projects\CSharpProjects\CSharpPractice\VariableScopes\obj\Debug\net8.0\VariableScopes.csproj.CoreCompileInputs.cache
+D:\Academia\Projects\CSharpProjects\CSharpPractice\VariableScopes\obj\Debug\net8.0\VariableScopes.sourcelink.json
+D:\Academia\Projects\CSharpProjects\CSharpPractice\VariableScopes\obj\Debug\net8.0\VariableScopes.dll
+D:\Academia\Projects\CSharpProjects\CSharpPractice\VariableScopes\obj\Debug\net8.0\refint\VariableScopes.dll
+D:\Academia\Projects\CSharpProjects\CSharpPractice\VariableScopes\obj\Debug\net8.0\VariableScopes.pdb
+D:\Academia\Projects\CSharpProjects\CSharpPractice\VariableScopes\obj\Debug\net8.0\VariableScopes.genruntimeconfig.cache
+D:\Academia\Projects\CSharpProjects\CSharpPractice\VariableScopes\obj\Debug\net8.0\ref\VariableScopes.dll

@@ -75,6 +75,8 @@ for (int i = 0; i < maxPets; i++)
     ourAnimals[i, 5] = "Personality: " + animalPersonalityDescription;
 }
 
+do
+{
 // display the top-level menu options
 
 Console.Clear();
@@ -102,3 +104,5 @@ Console.WriteLine("Press the Enter key to continue");
 
 // pause code execution
 readResult = Console.ReadLine();
+
+} while (menuSelection != "exit");

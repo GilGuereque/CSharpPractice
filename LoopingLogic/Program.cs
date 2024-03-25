@@ -104,7 +104,10 @@ do
 
     // pause code execution
     // readResult = Console.ReadLine();
-switch(menuSelection)
+
+} while (menuSelection != "exit");
+
+switch (menuSelection)
 {
     case "1":
         break;
@@ -132,7 +135,5 @@ switch(menuSelection)
 
     default:
         break;
-        
-}
 
-} while (menuSelection != "exit");
+}

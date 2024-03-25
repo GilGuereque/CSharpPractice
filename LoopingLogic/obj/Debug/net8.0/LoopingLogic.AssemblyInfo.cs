@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LoopingLogic")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+985bc4654f04b5f06a5dd1600d2ef1cc2ad0636f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8545ddd57247622d28fc1ee9c2c2c058c322e0e4")]
 [assembly: System.Reflection.AssemblyProductAttribute("LoopingLogic")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LoopingLogic")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

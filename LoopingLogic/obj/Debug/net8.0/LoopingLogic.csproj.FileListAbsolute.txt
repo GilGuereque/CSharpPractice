@@ -1,0 +1,15 @@
+D:\Academia\Projects\CSharpProjects\CSharpPractice\LoopingLogic\bin\Debug\net8.0\LoopingLogic.exe
+D:\Academia\Projects\CSharpProjects\CSharpPractice\LoopingLogic\bin\Debug\net8.0\LoopingLogic.deps.json
+D:\Academia\Projects\CSharpProjects\CSharpPractice\LoopingLogic\bin\Debug\net8.0\LoopingLogic.runtimeconfig.json
+D:\Academia\Projects\CSharpProjects\CSharpPractice\LoopingLogic\bin\Debug\net8.0\LoopingLogic.dll
+D:\Academia\Projects\CSharpProjects\CSharpPractice\LoopingLogic\bin\Debug\net8.0\LoopingLogic.pdb
+D:\Academia\Projects\CSharpProjects\CSharpPractice\LoopingLogic\obj\Debug\net8.0\LoopingLogic.GeneratedMSBuildEditorConfig.editorconfig
+D:\Academia\Projects\CSharpProjects\CSharpPractice\LoopingLogic\obj\Debug\net8.0\LoopingLogic.AssemblyInfoInputs.cache
+D:\Academia\Projects\CSharpProjects\CSharpPractice\LoopingLogic\obj\Debug\net8.0\LoopingLogic.AssemblyInfo.cs
+D:\Academia\Projects\CSharpProjects\CSharpPractice\LoopingLogic\obj\Debug\net8.0\LoopingLogic.csproj.CoreCompileInputs.cache
+D:\Academia\Projects\CSharpProjects\CSharpPractice\LoopingLogic\obj\Debug\net8.0\LoopingLogic.sourcelink.json
+D:\Academia\Projects\CSharpProjects\CSharpPractice\LoopingLogic\obj\Debug\net8.0\LoopingLogic.dll
+D:\Academia\Projects\CSharpProjects\CSharpPractice\LoopingLogic\obj\Debug\net8.0\refint\LoopingLogic.dll
+D:\Academia\Projects\CSharpProjects\CSharpPractice\LoopingLogic\obj\Debug\net8.0\LoopingLogic.pdb
+D:\Academia\Projects\CSharpProjects\CSharpPractice\LoopingLogic\obj\Debug\net8.0\LoopingLogic.genruntimeconfig.cache
+D:\Academia\Projects\CSharpProjects\CSharpPractice\LoopingLogic\obj\Debug\net8.0\ref\LoopingLogic.dll

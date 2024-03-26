@@ -10,6 +10,7 @@ string animalNickname = "";
 int maxPets = 8;
 string? readResult;
 string menuSelection = "";
+// test comment
 
 // array used to store runtime data, there is no persisted data
 string[,] ourAnimals = new string[maxPets, 6];

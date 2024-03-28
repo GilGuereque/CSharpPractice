@@ -146,7 +146,7 @@ do
             {
                 bool validEntry = false;
                 // get species (cat or dog) - string animalSpecies is a required field
-                do 
+                do
                 {
                     Console.WriteLine("\n\rEnter 'dog' or 'cat' to begin a new entry")
                     readResult = Console.ReadLine();
@@ -167,7 +167,7 @@ do
                 } while (validEntry == false);
 
                 // build the animal ID number - for example C1, C2, D3 (for Cat 1, Cat 2, Dog 3)
-                animalID = animalSpecies.Substring(0,1) + (petCount + 1).ToString();
+                animalID = animalSpecies.Substring(0, 1) + (petCount + 1).ToString();
 
                 // get the pet's age. can be ? at initial entry
                 do
@@ -189,9 +189,24 @@ do
                     }
                 } while (validEntry == false);
 
+                // get a description of the pet's physical appearance/condition - animalPhysicalDescription can be blank.
+                do
+                {
+                    Console.WriteLine("Enter a physical description of the pet (size, color, gender, weight, housebroken)");
+                    readResult = Console.ReadLine();
+                    if (readResult != null)
+                    {
+                        animalPhysicalDescription = readResult.ToLower();
+                        if (animalPhysicalDescription == "")
+                        {
+                            animalPhysicalDescription = "tbd";
+                        }
+                    }
+                } while (animalPhysicalDescription == "")
+
                 // increment petCount (the array is zero-based, so we increment the counter after adding to the array)
                 petCount = petCount + 1;
-                
+
                 // check maxPet limit
                 if (petCount < maxPets)
                 {

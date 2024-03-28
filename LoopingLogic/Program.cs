@@ -148,7 +148,7 @@ do
                 // get species (cat or dog) - string animalSpecies is a required field
                 do
                 {
-                    Console.WriteLine("\n\rEnter 'dog' or 'cat' to begin a new entry")
+                    Console.WriteLine("\n\rEnter 'dog' or 'cat' to begin a new entry");
                     readResult = Console.ReadLine();
                     if (readResult != null)
                     {
@@ -233,6 +233,14 @@ do
                         }
                     }
                 } while (animalNickname == "");
+
+                // store the pet information in the ourAnimals array (zero based)
+                ourAnimals[petCount, 0] = "ID #: " + animalID;
+                ourAnimals[petCount, 1] = "Species: " + animalSpecies;
+                ourAnimals[petCount, 2] = "Age: " + animalAge;
+                ourAnimals[petCount, 3] = "Nickname: " + animalNickname;
+                ourAnimals[petCount, 4] = "Physical description: " + animalPhysicalDescription;
+                ourAnimals[petCount, 5] = "Personality: " + animalPersonalityDescription;
 
                 // increment petCount (the array is zero-based, so we increment the counter after adding to the array)
                 petCount = petCount + 1;

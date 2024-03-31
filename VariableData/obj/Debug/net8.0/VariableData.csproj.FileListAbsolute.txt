@@ -1,0 +1,15 @@
+D:\CSharpPractice\VariableData\bin\Debug\net8.0\VariableData.exe
+D:\CSharpPractice\VariableData\bin\Debug\net8.0\VariableData.deps.json
+D:\CSharpPractice\VariableData\bin\Debug\net8.0\VariableData.runtimeconfig.json
+D:\CSharpPractice\VariableData\bin\Debug\net8.0\VariableData.dll
+D:\CSharpPractice\VariableData\bin\Debug\net8.0\VariableData.pdb
+D:\CSharpPractice\VariableData\obj\Debug\net8.0\VariableData.GeneratedMSBuildEditorConfig.editorconfig
+D:\CSharpPractice\VariableData\obj\Debug\net8.0\VariableData.AssemblyInfoInputs.cache
+D:\CSharpPractice\VariableData\obj\Debug\net8.0\VariableData.AssemblyInfo.cs
+D:\CSharpPractice\VariableData\obj\Debug\net8.0\VariableData.csproj.CoreCompileInputs.cache
+D:\CSharpPractice\VariableData\obj\Debug\net8.0\VariableData.sourcelink.json
+D:\CSharpPractice\VariableData\obj\Debug\net8.0\VariableData.dll
+D:\CSharpPractice\VariableData\obj\Debug\net8.0\refint\VariableData.dll
+D:\CSharpPractice\VariableData\obj\Debug\net8.0\VariableData.pdb
+D:\CSharpPractice\VariableData\obj\Debug\net8.0\VariableData.genruntimeconfig.cache
+D:\CSharpPractice\VariableData\obj\Debug\net8.0\ref\VariableData.dll

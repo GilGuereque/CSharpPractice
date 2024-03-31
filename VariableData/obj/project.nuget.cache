@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "GSMWyJOuiKayEUG9w5fh3nG3f5psnPnH/mFrZYcF12K37esumpmuA/TD74PXmphADhcnyi830jOeIDIpI/5cJw==",
+  "dgSpecHash": "0PZCH+82ENe8gJQqrVqJ6y9HOO5+KfCKh8fG2A/OHSmNGe46yUcMvB+Mg4d8ksZTaXg8U0M5p/Px7uSdDZcTUA==",
   "success": true,
-  "projectFilePath": "D:\\CSharpPractice\\CSharpPractice\\VariableData\\VariableData.csproj",
+  "projectFilePath": "D:\\CSharpPractice\\VariableData\\VariableData.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

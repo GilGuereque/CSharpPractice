@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\CSharpPractice\\CSharpPractice\\VariableData\\VariableData.csproj",
+      "projectUniqueName": "D:\\CSharpPractice\\VariableData\\VariableData.csproj",
       "projectName": "VariableData",
-      "projectPath": "D:\\CSharpPractice\\CSharpPractice\\VariableData\\VariableData.csproj",
+      "projectPath": "D:\\CSharpPractice\\VariableData\\VariableData.csproj",
       "packagesPath": "C:\\Users\\gguer\\.nuget\\packages\\",
-      "outputPath": "D:\\CSharpPractice\\CSharpPractice\\VariableData\\obj\\",
+      "outputPath": "D:\\CSharpPractice\\VariableData\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\gguer\\AppData\\Roaming\\NuGet\\NuGet.Config",

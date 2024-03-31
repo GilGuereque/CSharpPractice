@@ -1,0 +1,15 @@
+D:\CSharpPractice\ChallengeLooping\bin\Debug\net8.0\Starter.exe
+D:\CSharpPractice\ChallengeLooping\bin\Debug\net8.0\Starter.deps.json
+D:\CSharpPractice\ChallengeLooping\bin\Debug\net8.0\Starter.runtimeconfig.json
+D:\CSharpPractice\ChallengeLooping\bin\Debug\net8.0\Starter.dll
+D:\CSharpPractice\ChallengeLooping\bin\Debug\net8.0\Starter.pdb
+D:\CSharpPractice\ChallengeLooping\obj\Debug\net8.0\Starter.GeneratedMSBuildEditorConfig.editorconfig
+D:\CSharpPractice\ChallengeLooping\obj\Debug\net8.0\Starter.AssemblyInfoInputs.cache
+D:\CSharpPractice\ChallengeLooping\obj\Debug\net8.0\Starter.AssemblyInfo.cs
+D:\CSharpPractice\ChallengeLooping\obj\Debug\net8.0\Starter.csproj.CoreCompileInputs.cache
+D:\CSharpPractice\ChallengeLooping\obj\Debug\net8.0\Starter.sourcelink.json
+D:\CSharpPractice\ChallengeLooping\obj\Debug\net8.0\Starter.dll
+D:\CSharpPractice\ChallengeLooping\obj\Debug\net8.0\refint\Starter.dll
+D:\CSharpPractice\ChallengeLooping\obj\Debug\net8.0\Starter.pdb
+D:\CSharpPractice\ChallengeLooping\obj\Debug\net8.0\Starter.genruntimeconfig.cache
+D:\CSharpPractice\ChallengeLooping\obj\Debug\net8.0\ref\Starter.dll

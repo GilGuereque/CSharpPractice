@@ -13,3 +13,11 @@ D:\CSharpPractice\VariableData\obj\Debug\net8.0\refint\VariableData.dll
 D:\CSharpPractice\VariableData\obj\Debug\net8.0\VariableData.pdb
 D:\CSharpPractice\VariableData\obj\Debug\net8.0\VariableData.genruntimeconfig.cache
 D:\CSharpPractice\VariableData\obj\Debug\net8.0\ref\VariableData.dll
+D:\Academia\Projects\CSharpProjects\CSharpPractice\VariableData\obj\Debug\net8.0\VariableData.GeneratedMSBuildEditorConfig.editorconfig
+D:\Academia\Projects\CSharpProjects\CSharpPractice\VariableData\obj\Debug\net8.0\VariableData.AssemblyInfoInputs.cache
+D:\Academia\Projects\CSharpProjects\CSharpPractice\VariableData\obj\Debug\net8.0\VariableData.AssemblyInfo.cs
+D:\Academia\Projects\CSharpProjects\CSharpPractice\VariableData\obj\Debug\net8.0\VariableData.csproj.CoreCompileInputs.cache
+D:\Academia\Projects\CSharpProjects\CSharpPractice\VariableData\obj\Debug\net8.0\VariableData.sourcelink.json
+D:\Academia\Projects\CSharpProjects\CSharpPractice\VariableData\obj\Debug\net8.0\VariableData.dll
+D:\Academia\Projects\CSharpProjects\CSharpPractice\VariableData\obj\Debug\net8.0\refint\VariableData.dll
+D:\Academia\Projects\CSharpProjects\CSharpPractice\VariableData\obj\Debug\net8.0\VariableData.pdb

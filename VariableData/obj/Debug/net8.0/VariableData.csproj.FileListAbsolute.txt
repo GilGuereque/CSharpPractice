@@ -21,3 +21,10 @@ D:\Academia\Projects\CSharpProjects\CSharpPractice\VariableData\obj\Debug\net8.0
 D:\Academia\Projects\CSharpProjects\CSharpPractice\VariableData\obj\Debug\net8.0\VariableData.dll
 D:\Academia\Projects\CSharpProjects\CSharpPractice\VariableData\obj\Debug\net8.0\refint\VariableData.dll
 D:\Academia\Projects\CSharpProjects\CSharpPractice\VariableData\obj\Debug\net8.0\VariableData.pdb
+D:\Academia\Projects\CSharpProjects\CSharpPractice\VariableData\bin\Debug\net8.0\VariableData.exe
+D:\Academia\Projects\CSharpProjects\CSharpPractice\VariableData\bin\Debug\net8.0\VariableData.deps.json
+D:\Academia\Projects\CSharpProjects\CSharpPractice\VariableData\bin\Debug\net8.0\VariableData.runtimeconfig.json
+D:\Academia\Projects\CSharpProjects\CSharpPractice\VariableData\bin\Debug\net8.0\VariableData.dll
+D:\Academia\Projects\CSharpProjects\CSharpPractice\VariableData\bin\Debug\net8.0\VariableData.pdb
+D:\Academia\Projects\CSharpProjects\CSharpPractice\VariableData\obj\Debug\net8.0\VariableData.genruntimeconfig.cache
+D:\Academia\Projects\CSharpProjects\CSharpPractice\VariableData\obj\Debug\net8.0\ref\VariableData.dll

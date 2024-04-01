@@ -24,7 +24,22 @@
 // int[] data = new int[3];
 
 // Casting & Converting Data Types
-int first = 2;
-string second = "4";
-int result = first + second;
-Console.WriteLine(result);
+// int first = 2;
+// string second = "4";
+// int result = first + second;
+// Console.WriteLine(result); //could not convert the string variable to an int
+
+
+// since you are using a string for the result variable this works
+// int first = 2;
+// string second = "4";
+// string result = first + second;
+// Console.WriteLine(result);
+
+// Is it possible to change the value's data type and result 
+// in a loss of information?
+int myInt = 3;
+Console.WriteLine($"int: {myInt}");
+
+decimal myDecimal = myInt;
+Console.WriteLine($"decimal: {myDecimal}");

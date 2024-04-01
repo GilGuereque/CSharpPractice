@@ -51,9 +51,21 @@
 // int myInt = (int)myDecimal;
 // Console.WriteLine($"int: {myInt}");
 
-// Precision changes in narrowing & widening conversions
-decimal myDecimal = 1.23456789m;
-float myFloat = (float)myDecimal;
+// // Precision changes in narrowing & widening conversions
+// decimal myDecimal = 1.23456789m;
+// float myFloat = (float)myDecimal;
 
-Console.WriteLine($"decimal: {myDecimal}");
-Console.WriteLine($"float  : {myFloat}"); // you lost precision of one decimal
+// Console.WriteLine($"decimal: {myDecimal}");
+// Console.WriteLine($"float  : {myFloat}"); // you lost precision of one decimal
+
+
+// // Performing Data Conversions with methods
+// int first = 5;
+// int second = 7;
+// string message = first.ToString() + second.ToString();
+// Console.WriteLine(message);
+
+string first = "5";
+string second = "7";
+int sum = int.Parse(first) + int.Parse(second);
+Console.WriteLine(sum);

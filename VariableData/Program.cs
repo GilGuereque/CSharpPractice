@@ -37,9 +37,16 @@
 // Console.WriteLine(result);
 
 // Is it possible to change the value's data type and result 
-// in a loss of information?
-int myInt = 3;
-Console.WriteLine($"int: {myInt}");
+// // in a loss of information?
+// int myInt = 3;
+// Console.WriteLine($"int: {myInt}");
 
-decimal myDecimal = myInt;
+// decimal myDecimal = myInt;
+// Console.WriteLine($"decimal: {myDecimal}");
+
+// Perform a Cast
+decimal myDecimal = 3.14m;
 Console.WriteLine($"decimal: {myDecimal}");
+
+int myInt = (int)myDecimal;
+Console.WriteLine($"int: {myInt}");

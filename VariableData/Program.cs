@@ -44,9 +44,16 @@
 // decimal myDecimal = myInt;
 // Console.WriteLine($"decimal: {myDecimal}");
 
-// Perform a Cast
-decimal myDecimal = 3.14m;
-Console.WriteLine($"decimal: {myDecimal}");
+// // Perform a Cast
+// decimal myDecimal = 3.14m;
+// Console.WriteLine($"decimal: {myDecimal}");
 
-int myInt = (int)myDecimal;
-Console.WriteLine($"int: {myInt}");
+// int myInt = (int)myDecimal;
+// Console.WriteLine($"int: {myInt}");
+
+// Precision changes in narrowing & widening conversions
+decimal myDecimal = 1.23456789m;
+float myFloat = (float)myDecimal;
+
+Console.WriteLine($"decimal: {myDecimal}");
+Console.WriteLine($"float  : {myFloat}"); // you lost precision of one decimal

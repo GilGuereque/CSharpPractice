@@ -65,7 +65,21 @@
 // string message = first.ToString() + second.ToString();
 // Console.WriteLine(message);
 
-string first = "5";
-string second = "7";
-int sum = int.Parse(first) + int.Parse(second);
-Console.WriteLine(sum);
+// Use the Parse method, can also use TryParse which is the better method
+// string first = "5";
+// string second = "7";
+// int sum = int.Parse(first) + int.Parse(second);
+// Console.WriteLine(sum);
+
+// // Convert strings to int using Convert class
+// string value1 = "5";
+// string value2 = "7";
+// int result = Convert.ToInt32(value1) * Convert.ToInt32(value2);
+// Console.WriteLine(result);
+
+// narrowing conversions with Convert
+int value = (int)1.5m; // casting truncates
+Console.WriteLine(value);
+
+int value2 = Convert.ToInt32(1.5m); // converting rounds up
+Console.WriteLine(value2);

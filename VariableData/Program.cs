@@ -77,9 +77,23 @@
 // int result = Convert.ToInt32(value1) * Convert.ToInt32(value2);
 // Console.WriteLine(result);
 
-// narrowing conversions with Convert
-int value = (int)1.5m; // casting truncates
-Console.WriteLine(value);
+// // narrowing conversions with Convert
+// int value = (int)1.5m; // casting truncates
+// Console.WriteLine(value);
 
-int value2 = Convert.ToInt32(1.5m); // converting rounds up
-Console.WriteLine(value2);
+// int value2 = Convert.ToInt32(1.5m); // converting rounds up
+// Console.WriteLine(value2);
+
+// using the TryParse method
+// TryParse takes in the value of 102 which is a string
+// and spits out the result that was 0, but instead 102 as an int
+string value = "102";
+int result = 0;
+if (int.TryParse(value, out result))
+{
+    Console.WriteLine($"Measurement: {result}");
+}
+else
+{
+    Console.WriteLine("Unable to report the measurement.");
+}

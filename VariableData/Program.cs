@@ -87,7 +87,8 @@
 // using the TryParse method
 // TryParse takes in the value of 102 which is a string
 // and spits out the result that was 0, but instead 102 as an int
-string value = "102";
+// string value = "102";
+string value = "bad";
 int result = 0;
 if (int.TryParse(value, out result))
 {
@@ -97,3 +98,5 @@ else
 {
     Console.WriteLine("Unable to report the measurement.");
 }
+if (result > 0)
+    Console.WriteLine($"Measurement (w/ offset): {50 + result}");

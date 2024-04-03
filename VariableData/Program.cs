@@ -101,21 +101,39 @@
 // if (result > 0)
 //     Console.WriteLine($"Measurement (w/ offset): {50 + result}");
 
-// Exercise to separate string data
-string[] values = {"12.3", "45","ABC","11","DEF"};
-string message = "";
-decimal total = 0m;
+// // Exercise to separate string data
+// string[] values = {"12.3", "45","ABC","11","DEF"};
+// string message = "";
+// decimal total = 0m;
 
-foreach (var n in values)
-{
-    decimal number; // stores the TryParse "out" value
-    if (decimal.TryParse(n, out number))
-    {
-        total += number;
-    } else
-    {
-        message += n;
-    }
-}
-Console.WriteLine($"Message: {message}");
-Console.WriteLine($"Total: {total}");
+// foreach (var n in values)
+// {
+//     decimal number; // stores the TryParse "out" value
+//     if (decimal.TryParse(n, out number))
+//     {
+//         total += number;
+//     } else
+//     {
+//         message += n;
+//     }
+// }
+// Console.WriteLine($"Message: {message}");
+// Console.WriteLine($"Total: {total}");
+
+// Excercise - Complete challenge to output math operations
+// as a specific number types
+int value1 = 12;
+decimal value2 = 6.2m;
+float value3 = 4.3f;
+
+// The Convert class is best for converting the fractional decimal numbers into whole integer numbers
+// Convert.ToInt32() rounds up the way you would expect.
+int result1 = Convert.ToInt32(value1 / value2); // Your code here to set result1
+// Hint: You need to round the result to nearest integer (don't just truncate)
+Console.WriteLine($"Divide value1 by value2, display the result as an int: {result1}");
+
+decimal result2 = value2 / (decimal)value3; // Your code here to set result2
+Console.WriteLine($"Divide value2 by value3, display the result as a decimal: {result2}");
+
+float result3 = value3 / value1; // Your code here to set result3
+Console.WriteLine($"Divide value3 by value1, display the result as a float: {result3}");

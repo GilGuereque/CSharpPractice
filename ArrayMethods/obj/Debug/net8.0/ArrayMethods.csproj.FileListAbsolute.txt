@@ -1,0 +1,15 @@
+D:\Academia\Projects\CSharpProjects\CSharpPractice\ArrayMethods\obj\Debug\net8.0\ArrayMethods.GeneratedMSBuildEditorConfig.editorconfig
+D:\Academia\Projects\CSharpProjects\CSharpPractice\ArrayMethods\obj\Debug\net8.0\ArrayMethods.AssemblyInfoInputs.cache
+D:\Academia\Projects\CSharpProjects\CSharpPractice\ArrayMethods\obj\Debug\net8.0\ArrayMethods.AssemblyInfo.cs
+D:\Academia\Projects\CSharpProjects\CSharpPractice\ArrayMethods\obj\Debug\net8.0\ArrayMethods.csproj.CoreCompileInputs.cache
+D:\Academia\Projects\CSharpProjects\CSharpPractice\ArrayMethods\obj\Debug\net8.0\ArrayMethods.sourcelink.json
+D:\Academia\Projects\CSharpProjects\CSharpPractice\ArrayMethods\bin\Debug\net8.0\ArrayMethods.exe
+D:\Academia\Projects\CSharpProjects\CSharpPractice\ArrayMethods\bin\Debug\net8.0\ArrayMethods.deps.json
+D:\Academia\Projects\CSharpProjects\CSharpPractice\ArrayMethods\bin\Debug\net8.0\ArrayMethods.runtimeconfig.json
+D:\Academia\Projects\CSharpProjects\CSharpPractice\ArrayMethods\bin\Debug\net8.0\ArrayMethods.dll
+D:\Academia\Projects\CSharpProjects\CSharpPractice\ArrayMethods\bin\Debug\net8.0\ArrayMethods.pdb
+D:\Academia\Projects\CSharpProjects\CSharpPractice\ArrayMethods\obj\Debug\net8.0\ArrayMethods.dll
+D:\Academia\Projects\CSharpProjects\CSharpPractice\ArrayMethods\obj\Debug\net8.0\refint\ArrayMethods.dll
+D:\Academia\Projects\CSharpProjects\CSharpPractice\ArrayMethods\obj\Debug\net8.0\ArrayMethods.pdb
+D:\Academia\Projects\CSharpProjects\CSharpPractice\ArrayMethods\obj\Debug\net8.0\ArrayMethods.genruntimeconfig.cache
+D:\Academia\Projects\CSharpProjects\CSharpPractice\ArrayMethods\obj\Debug\net8.0\ref\ArrayMethods.dll

@@ -75,16 +75,58 @@
 //     Console.WriteLine($"-- {pallet}");
 // }
 
-// Using ToCharArray() & Reverse()
-string value = "abc123";
-char[] valueArray = value.ToCharArray();
-Array.Reverse(valueArray);
-string result = new string(valueArray);
-Console.WriteLine(result);
+// // Using ToCharArray() & Reverse()
+// string value = "abc123";
+// char[] valueArray = value.ToCharArray();
+// Array.Reverse(valueArray);
+// string result = new string(valueArray);
+// Console.WriteLine(result);
 
-// Using Split() & Join()
-string value2 = "abc123";
-char[] valueArray2 =  value2.ToCharArray();
-Array.Reverse(valueArray2);
-string result2 = string.Join(",", valueArray2);
-Console.WriteLine(result2);
+// // Using Split() & Join()
+// string value2 = "abc123";
+// char[] valueArray2 =  value2.ToCharArray();
+// Array.Reverse(valueArray2);
+// string result2 = string.Join(",", valueArray2);
+// Console.WriteLine(result2);
+
+// string value = "abc123";
+// char[] valueArray = value.ToCharArray();
+// Array.Reverse(valueArray);
+// // string result = new string(valueArray);
+// string result = string.Join(",", valueArray);
+// Console.WriteLine(result);
+
+// string[] items = result.Split(',');
+// foreach (string item in items)
+// {
+//     Console.WriteLine(item);
+// }
+
+
+// Write code to reverse each word in a message
+// string pangram = "The quick brown fox jumps over the lazy dog";
+// char[] pangramArray = pangram.ToCharArray();
+// string result = string.Split(",", pangramArray);
+// Array.Reverse(pangramArray);
+// Console.WriteLine(pangramArray);
+
+
+string pangram = "The quick brown fox jumps over the lazy dog";
+
+// Step 1
+string[] message = pangram.Split(' ');
+
+//Step 2
+string[] newMessage = new string[message.Length];
+
+// Step 3
+for (int i = 0; i < message.Length; i++)
+{
+    char[] letters = message[i].ToCharArray();
+    Array.Reverse(letters);
+    newMessage[i] = new string(letters);
+}
+
+//Step 4
+string result = String.Join(" ", newMessage);
+Console.WriteLine(result);

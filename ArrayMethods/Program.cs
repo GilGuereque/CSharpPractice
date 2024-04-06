@@ -328,14 +328,49 @@
 // int length = closingPosition - openingPosition;
 // Console.WriteLine(message.Substring(openingPosition, length));
 
-string message = "What is the value <span>between the tags</span>?";
+// string message = "What is the value <span>between the tags</span>?";
 
-const string openSpan = "<span>";
-const string closeSpan = "</span>";
+// const string openSpan = "<span>";
+// const string closeSpan = "</span>";
 
-int openingPosition = message.IndexOf(openSpan);
-int closingPosition = message.IndexOf(closeSpan);
+// int openingPosition = message.IndexOf(openSpan);
+// int closingPosition = message.IndexOf(closeSpan);
 
-openingPosition += openSpan.Length;
-int length = closingPosition - openingPosition;
-Console.WriteLine(message.Substring(openingPosition, length));
+// openingPosition += openSpan.Length;
+// int length = closingPosition - openingPosition;
+// Console.WriteLine(message.Substring(openingPosition, length));
+
+// // Exercise for indexyofany and lastindexof
+// string message = "(What if) I am (only interested) in the last (set of parentheses)?";
+// int openingPosition = message.LastIndexOf('(');
+// Console.WriteLine(openingPosition);
+// openingPosition += 1;
+// int closingPosition = message.LastIndexOf(')');
+// int length = closingPosition - openingPosition;
+// Console.WriteLine(message.Substring(openingPosition, length));
+
+// Retrieve all instance of substrings inside parentheses:
+string message = "(What if) there are (more than) one (set of parentheses)?";
+List<string> messages = new List<string>(); // create a list to store substrings
+
+while (true)
+{
+    int openingPosition = message.IndexOf('(');
+    if (openingPosition == -1) break; // no more opening parentheses (exit loop)
+
+    openingPosition += 1; // move past the opening parenthesis
+    int closingPosition = message.IndexOf(')'); // find closing parenthesis
+    if (closingPosition == -1) break; // Safety check for mismatched parentheses
+
+    int length = closingPosition - openingPosition; // calculate length of substring
+    Console.WriteLine(message.Substring(openingPosition, length)); // display substring
+    messages.Add(message.Substring(openingPosition, length)); // store substring in array
+    // Note the overload of the Substring to return only the remaining 
+    // unprocessed message:
+    message = message.Substring(closingPosition + 1);
+}
+
+foreach (var msg in messages)
+{
+    Console.WriteLine(msg);
+}

@@ -198,9 +198,18 @@
 // Console.WriteLine("{1} {0}!", first, second);
 // Console.WriteLine("{0} {0} {0}!", first, second);
 
-// String interpolation
-string first = "Hello";
-string second = "World";
-Console.WriteLine($"{first} {second}");
-Console.WriteLine($"{second} {first}");
-Console.WriteLine($"{first} {first} {first}");
+// // String interpolation
+// string first = "Hello";
+// string second = "World";
+// Console.WriteLine($"{first} {second}");
+// Console.WriteLine($"{second} {first}");
+// Console.WriteLine($"{first} {first} {first}");
+
+// // formatting currency
+// decimal price = 123.45m;
+// int discount = 50;
+// Console.WriteLine($"Price: {price:C} (Save {discount:C})");
+
+// formatting numbers
+decimal measurement = 123456.78912m;
+Console.WriteLine($"Measurement: {measurement:N4} units");

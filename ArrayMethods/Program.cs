@@ -210,6 +210,20 @@
 // int discount = 50;
 // Console.WriteLine($"Price: {price:C} (Save {discount:C})");
 
-// formatting numbers
-decimal measurement = 123456.78912m;
-Console.WriteLine($"Measurement: {measurement:N4} units");
+// // formatting numbers
+// decimal measurement = 123456.78912m;
+// Console.WriteLine($"Measurement: {measurement:N4} units");
+
+// formatting percentages:
+// decimal tax = .36785m;
+// Console.WriteLine($"Tax rate: {tax:P2}");
+
+// combining formatting approaches:
+decimal price = 67.55m;
+decimal salePrice = 59.99m;
+decimal discount = (price - salePrice) / price;
+
+string yourDiscount = String.Format("You saved {0:C2} off the regular {1:C2} price.", (price - salePrice), price);
+
+Console.WriteLine(yourDiscount);
+Console.WriteLine($"A total of {discount:P2} in savings.");

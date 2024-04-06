@@ -137,50 +137,63 @@
 // Console.WriteLine(items);
 // Console.WriteLine(orderStream[1]);
 // // Array.Sort(items);
-string orderStream = "B123,C234,A345,C15,B177,G3003,C235,B179";
-string[] items = orderStream.Split(',');
-Array.Sort(items);
+// string orderStream = "B123,C234,A345,C15,B177,G3003,C235,B179";
+// string[] items = orderStream.Split(',');
+// Array.Sort(items);
 
-foreach (var item in items)
-{
-    if (item.Length == 4)
-    {
-        Console.WriteLine(item);
-    }
-    else
-    {
-        Console.WriteLine(item + "\t- Error");
-    }
-}
+// foreach (var item in items)
+// {
+//     if (item.Length == 4)
+//     {
+//         Console.WriteLine(item);
+//     }
+//     else
+//     {
+//         Console.WriteLine(item + "\t- Error");
+//     }
+// }
 
 
-// Leetcode Two Sum solution:
+// // Leetcode Two Sum solution:
 
-// my solution:
-public class Solution {
-    public int[] TwoSum(int[] nums, int target) {
-        int sum = 0;
-        foreach (int num in nums)
-        {
-            if (num + num == target)
-            {
-                sum = num + num;
-            }
-        }
-        Console.WriteLine(sum);
-    }
-}
+// // my solution:
+// public class Solution {
+//     public int[] TwoSum(int[] nums, int target) {
+//         int sum = 0;
+//         foreach (int num in nums)
+//         {
+//             if (num + num == target)
+//             {
+//                 sum = num + num;
+//             }
+//         }
+//         Console.WriteLine(sum);
+//     }
+// }
 
-// correct solution:
-public class Solution {
-    public int[] TwoSum(int[] nums, int target) {
-        for (int i = 0; i < nums.Length; i++) {
-            for (int j = i + 1; j < nums.Length; j++) {
-                if (nums[i] + nums[j] == target) {
-                    return new int[] { i, j };
-                }
-            }
-        }
-        throw new ArgumentException("No two sum solution");
-    }
-}
+// // correct solution:
+// public class Solution {
+//     public int[] TwoSum(int[] nums, int target) {
+//         for (int i = 0; i < nums.Length; i++) {
+//             for (int j = i + 1; j < nums.Length; j++) {
+//                 if (nums[i] + nums[j] == target) {
+//                     return new int[] { i, j };
+//                 }
+//             }
+//         }
+//         throw new ArgumentException("No two sum solution");
+//     }
+// }
+
+
+// Composite formatting in Strings
+string first = "Hello";
+string second = "World";
+string result = string.Format("{0} {1}", first, second);
+Console.WriteLine(result);
+
+// changing up the order:
+string first = "Hello";
+string second = "World";
+Console.WriteLine("{1} {0}!", first, second);
+Console.WriteLine("{0} {0} {0}!", first, second);

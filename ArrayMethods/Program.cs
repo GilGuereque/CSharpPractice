@@ -300,21 +300,42 @@
 
 // Console.WriteLine(comparisonMessage);
 
-// find parenthesis pairs embedded in a string
-string message = "Find what is (inside the parentheses)";
+// // find parenthesis pairs embedded in a string
+// string message = "Find what is (inside the parentheses)";
 
-int openingPosition = message.IndexOf('(');
-int closingPosition = message.IndexOf(')');
+// int openingPosition = message.IndexOf('(');
+// int closingPosition = message.IndexOf(')');
 
-// Console.WriteLine(openingPosition);
-// Console.WriteLine(closingPosition);
+// // Console.WriteLine(openingPosition);
+// // Console.WriteLine(closingPosition);
+
+// // int length = closingPosition - openingPosition;
+// // Console.WriteLine(message.Substring(openingPosition + 1, length - 1));
+// // Console.WriteLine(length);
+
+// // or you can also do this:
+// openingPosition += 1;
 
 // int length = closingPosition - openingPosition;
-// Console.WriteLine(message.Substring(openingPosition + 1, length - 1));
-// Console.WriteLine(length);
+// Console.WriteLine(message.Substring(openingPosition, length));
 
-// or you can also do this:
-openingPosition += 1;
+// string message = "What is the value <span>between the tags</span>?";
 
+// int openingPosition = message.IndexOf("<span>");
+// int closingPosition = message.IndexOf("</span>");
+
+// openingPosition += 6;
+// int length = closingPosition - openingPosition;
+// Console.WriteLine(message.Substring(openingPosition, length));
+
+string message = "What is the value <span>between the tags</span>?";
+
+const string openSpan = "<span>";
+const string closeSpan = "</span>";
+
+int openingPosition = message.IndexOf(openSpan);
+int closingPosition = message.IndexOf(closeSpan);
+
+openingPosition += openSpan.Length;
 int length = closingPosition - openingPosition;
 Console.WriteLine(message.Substring(openingPosition, length));

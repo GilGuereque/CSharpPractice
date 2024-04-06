@@ -186,14 +186,21 @@
 // }
 
 
-// Composite formatting in Strings
-string first = "Hello";
-string second = "World";
-string result = string.Format("{0} {1}", first, second);
-Console.WriteLine(result);
+// // Composite formatting in Strings
+// string first = "Hello";
+// string second = "World";
+// string result = string.Format("{0} {1}", first, second);
+// Console.WriteLine(result);
 
-// changing up the order:
+// // changing up the order:
+// string first = "Hello";
+// string second = "World";
+// Console.WriteLine("{1} {0}!", first, second);
+// Console.WriteLine("{0} {0} {0}!", first, second);
+
+// String interpolation
 string first = "Hello";
 string second = "World";
-Console.WriteLine("{1} {0}!", first, second);
-Console.WriteLine("{0} {0} {0}!", first, second);
+Console.WriteLine($"{first} {second}");
+Console.WriteLine($"{second} {first}");
+Console.WriteLine($"{first} {first} {first}");

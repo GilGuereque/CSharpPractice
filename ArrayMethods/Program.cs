@@ -309,8 +309,12 @@ int closingPosition = message.IndexOf(')');
 // Console.WriteLine(openingPosition);
 // Console.WriteLine(closingPosition);
 
-int length = closingPosition - openingPosition;
-Console.WriteLine(message.Substring(openingPosition + 1, length - 1));
-Console.WriteLine(length);
+// int length = closingPosition - openingPosition;
+// Console.WriteLine(message.Substring(openingPosition + 1, length - 1));
+// Console.WriteLine(length);
 
 // or you can also do this:
+openingPosition += 1;
+
+int length = closingPosition - openingPosition;
+Console.WriteLine(message.Substring(openingPosition, length));

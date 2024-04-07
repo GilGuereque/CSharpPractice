@@ -470,32 +470,64 @@ else ipAddress is invalid
 // // void methods do not return values and only perform operations:
 // void PrintMessage(string message)
 
-// use methods to calculate the total purchase price
-double total = 0;
-double minimumspend = 30.00;
+// // use methods to calculate the total purchase price
+// double total = 0;
+// double minimumspend = 30.00;
 
-double[] items = {15.97, 3.50, 12.25, 22.99, 10.98};
-double[] discounts = {0.30, 0.00, 0.10, 0.20, 0.50};
+// double[] items = {15.97, 3.50, 12.25, 22.99, 10.98};
+// double[] discounts = {0.30, 0.00, 0.10, 0.20, 0.50};
 
-Console.WriteLine($"Total: ${total}");
+// for (int i = 0; i < items.Length; i++)
+// {
+//     total += GetDiscountedPrice(i);
+// }
 
-// changing from void to double in the method signature 
-// shows that this method returns a double data type
-double GetDiscountedPrice(int itemIndex)
+// // if (TotalMeetsMinimum())
+// // {
+// //     total -= 5.00;
+// // }
+// total -= TotalMeetsMinimum() ? 5.00 : 0.00;
+
+// Console.WriteLine($"Total: ${FormatDecimal(total)}");
+
+// // changing from void to double in the method signature 
+// // shows that this method returns a double data type
+// double GetDiscountedPrice(int itemIndex)
+// {
+//     // double result = items[itemIndex] * (1 - discounts[itemIndex]);
+//     // return result;
+//     return items[itemIndex] * (1 - discounts[itemIndex]);
+// }
+
+// bool TotalMeetsMinimum()
+// {
+//     // Check if the total meets the minimum\
+//     return total >= minimumspend;
+// }
+
+// string FormatDecimal(double input)
+// {
+//     // Format the double so only 2 decimal places are displayed
+//     return input.ToString().Substring(0, 5);
+// }
+
+
+// create method that returns an integer
+double usd = 23.73;
+int vnd = UsdToVnd(usd);
+
+Console.WriteLine($"${usd} USD = ${vnd} VDN");
+Console.WriteLine($"${vnd} VND = ${VndToUsd(vnd)} USD");
+
+int UsdToVnd(double usd)
 {
-    // double result = items[itemIndex] * (1 - discounts[itemIndex]);
-    // return result;
-    return items[itemIndex] * (1 - discounts[itemIndex]);
+    // return (int) (usd * 23500);
+    int rate = 23500;
+    return (int) (rate * usd);
 }
 
-bool TotalMeetsMinimum()
+double VndToUsd(int vnd) 
 {
-    // Check if the total meets the minimum\
-    return total >= minimumspend;
-}
-
-string FormatDecimal(double input)
-{
-    // Format the double so only 2 decimal places are displayed
-    return input.ToString().Substring(0, 5);
+    double rate = 23500;
+    return vnd / rate;
 }

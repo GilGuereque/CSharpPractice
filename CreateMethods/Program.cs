@@ -512,22 +512,69 @@ else ipAddress is invalid
 // }
 
 
-// create method that returns an integer
-double usd = 23.73;
-int vnd = UsdToVnd(usd);
+// // create method that returns an integer
+// double usd = 23.73;
+// int vnd = UsdToVnd(usd);
 
-Console.WriteLine($"${usd} USD = ${vnd} VDN");
-Console.WriteLine($"${vnd} VND = ${VndToUsd(vnd)} USD");
+// Console.WriteLine($"${usd} USD = ${vnd} VDN");
+// Console.WriteLine($"${vnd} VND = ${VndToUsd(vnd)} USD");
 
-int UsdToVnd(double usd)
+// int UsdToVnd(double usd)
+// {
+//     // return (int) (usd * 23500);
+//     int rate = 23500;
+//     return (int) (rate * usd);
+// }
+
+// double VndToUsd(int vnd) 
+// {
+//     double rate = 23500;
+//     return vnd / rate;
+// }
+
+// // Create a method that returns a string
+// // reverse a string without using string.reverse()
+// string input = "snake";
+// string input2 = "kobra";
+
+// Console.WriteLine(input);
+// Console.WriteLine(ReverseWord(input));
+// Console.WriteLine(input2);
+// Console.WriteLine(ReverseWord(input2));
+
+// string ReverseWord(string word) 
+// {
+//     string result = "";
+//     for (int i = word.Length - 1; i >= 0; i--) 
+//     {
+//         result += word[i];
+//     }
+//     return result;
+// }
+
+// create a method to reverse words in a sentence:
+string input = "there are snakes at the zoo";
+
+Console.WriteLine(input);
+Console.WriteLine(ReverseSentence(input));
+
+string ReverseSentence(string input) 
 {
-    // return (int) (usd * 23500);
-    int rate = 23500;
-    return (int) (rate * usd);
+    string result = "";
+    string[] words = input.Split(" ");
+    foreach(string word in words) 
+    {
+        result += ReverseWord(word) + " ";
+    }
+    return result.Trim();
 }
 
-double VndToUsd(int vnd) 
+string ReverseWord(string word) 
 {
-    double rate = 23500;
-    return vnd / rate;
+    string result = "";
+    for (int i = word.Length - 1; i >= 0; i--) 
+    {
+        result += word[i];
+    }
+    return result;
 }

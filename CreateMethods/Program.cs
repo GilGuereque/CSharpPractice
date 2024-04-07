@@ -611,47 +611,99 @@ else ipAddress is invalid
 
 // method returning an array of integers
 // from 1d int array to 2d int array
-int target = 30;
-int[] coins = new int[] {5, 5, 50, 25, 25, 10, 5};
-int[,] result = TwoCoins(coins, target);
+// int target = 30;
+// int[] coins = new int[] {5, 5, 50, 25, 25, 10, 5};
+// int[,] result = TwoCoins(coins, target);
 
-if (result.Length == 0) 
+// if (result.Length == 0) 
+// {
+//     Console.WriteLine("No two coins make change");
+// } 
+// else 
+// {
+//     Console.WriteLine("Change found at positions:");
+//     for (int i = 0; i < result.GetLength(0); i++) 
+//     {
+//         if (result[i,0] == -1) 
+//         {
+//             break;
+//         }
+//         Console.WriteLine($"{result[i,0]},{result[i,1]}");
+//     }
+// }
+
+// int[,] TwoCoins(int[] coins, int target) 
+// {
+//     int[,] result = {{-1,-1},{-1,-1},{-1,-1},{-1,-1},{-1,-1}};
+//     int count = 0;
+
+//     for (int curr = 0; curr < coins.Length; curr++) 
+//     {
+//         for (int next = curr + 1; next < coins.Length; next++) 
+//         {    
+//             if (coins[curr] + coins[next] == target) 
+//             {
+//                 result[count, 0] = curr;
+//                 result[count, 1] = next;
+//                 count++;
+//             }
+//             if (count == result.GetLength(0)) 
+//             {
+//                 return result;
+//             }
+//         }
+//     }
+//     return (count == 0) ? new int[0,0] : result;
+// }
+
+
+// Game challenge for creating methods
+Random random = new Random();
+
+Console.WriteLine("Would you like to play? (Y/N)");
+if (ShouldPlay()) 
 {
-    Console.WriteLine("No two coins make change");
-} 
-else 
+    PlayGame();
+}
+
+bool ShouldPlay() 
 {
-    Console.WriteLine("Change found at positions:");
-    for (int i = 0; i < result.GetLength(0); i++) 
-    {
-        if (result[i,0] == -1) 
-        {
-            break;
-        }
-        Console.WriteLine($"{result[i,0]},{result[i,1]}");
+    string response = Console.ReadLine();
+    return response.ToLower().Equals("y");
+}
+
+void PlayGame() 
+{
+    var play = true;
+
+    while (play) {
+        var target = GetTarget();
+        var roll = RollDice();
+
+        Console.WriteLine($"Roll a number greater than {target} to win!");
+        Console.WriteLine($"You rolled a {roll}");
+        Console.WriteLine(WinOrLose(roll, target));
+        Console.WriteLine("\nPlay again? (Y/N)");
+
+        play = ShouldPlay();
     }
 }
 
-int[,] TwoCoins(int[] coins, int target) 
+int GetTarget()
 {
-    int[,] result = {{-1,-1},{-1,-1},{-1,-1},{-1,-1},{-1,-1}};
-    int count = 0;
+    return random.Next(1, 6);
+}
 
-    for (int curr = 0; curr < coins.Length; curr++) 
+int RollDice()
+{
+    return random.Next(1, 7);
+}
+
+string WinOrLose(int roll, int target)
+{
+    if (roll > target)
     {
-        for (int next = curr + 1; next < coins.Length; next++) 
-        {    
-            if (coins[curr] + coins[next] == target) 
-            {
-                result[count, 0] = curr;
-                result[count, 1] = next;
-                count++;
-            }
-            if (count == result.GetLength(0)) 
-            {
-                return result;
-            }
-        }
+        return "You win!";
     }
-    return (count == 0) ? new int[0,0] : result;
+    return "You lose dumbo!";
 }

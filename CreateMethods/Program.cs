@@ -12,27 +12,27 @@
 // notice it isn't necessary to define the method before you call it
 // it is actually common to call the method and define your methods at the end of a program
 // example
-int [] a = {1,2,3,4,5};
-PrintArray();
+// int [] a = {1,2,3,4,5};
+// PrintArray();
 
-void PrintArray()
-{
-    foreach (int x in a)
-    {
-        Console.WriteLine(x);
-    }
-    Console.WriteLine();
-}
+// void PrintArray()
+// {
+//     foreach (int x in a)
+//     {
+//         Console.WriteLine(x);
+//     }
+//     Console.WriteLine();
+// }
 
-// Method execution
-Console.WriteLine("Before calling a method");
-SayHello();
-Console.WriteLine("After calling a method");
+// // Method execution
+// Console.WriteLine("Before calling a method");
+// SayHello();
+// Console.WriteLine("After calling a method");
 
-void SayHello()
-{
-    Console.WriteLine("Hello World!");
-}
+// void SayHello()
+// {
+//     Console.WriteLine("Hello World!");
+// }
 
 // Best practices:
 /*
@@ -40,5 +40,22 @@ When choosing a method name, it's important to keep the name consise and make it
 Method names should be Pascal case and generally shouldn't start with digits. Names for parameters should describe
 what kind of info the parameter represents
 */
-void ShowData(string a, int b, int c);
-void DisplayData(string month, int day, int year);
+// void ShowData(string a, int b, int c);
+// void DisplayData(string month, int day, int year);
+
+
+// Exercise - Create your first method:
+Console.WriteLine("Generating random numbers:");
+DisplayRandomNumbers();
+
+void DisplayRandomNumbers()
+{
+    Random random = new Random();
+
+    for (int i = 0; i < 5; i++)
+    {
+        Console.Write($"{random.Next(1, 100)}  ");
+    }
+
+    Console.WriteLine();
+}

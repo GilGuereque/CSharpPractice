@@ -552,29 +552,56 @@ else ipAddress is invalid
 //     return result;
 // }
 
-// create a method to reverse words in a sentence:
-string input = "there are snakes at the zoo";
+// // create a method to reverse words in a sentence:
+// string input = "there are snakes at the zoo";
 
-Console.WriteLine(input);
-Console.WriteLine(ReverseSentence(input));
+// Console.WriteLine(input);
+// Console.WriteLine(ReverseSentence(input));
 
-string ReverseSentence(string input) 
+// string ReverseSentence(string input) 
+// {
+//     string result = "";
+//     string[] words = input.Split(" ");
+//     foreach(string word in words) 
+//     {
+//         result += ReverseWord(word) + " ";
+//     }
+//     return result.Trim();
+// }
+
+// string ReverseWord(string word) 
+// {
+//     string result = "";
+//     for (int i = word.Length - 1; i >= 0; i--) 
+//     {
+//         result += word[i];
+//     }
+//     return result;
+// }
+
+// Create a method that returns a Boolean
+string[] words = {"racecar" ,"talented", "deified", "tent", "tenet"};
+
+Console.WriteLine("Is it a palindrome?");
+foreach (string word in words) 
 {
-    string result = "";
-    string[] words = input.Split(" ");
-    foreach(string word in words) 
-    {
-        result += ReverseWord(word) + " ";
-    }
-    return result.Trim();
+    Console.WriteLine($"{word}: {IsPalindrome(word)}");
 }
 
-string ReverseWord(string word) 
+bool IsPalindrome(string word) 
 {
-    string result = "";
-    for (int i = word.Length - 1; i >= 0; i--) 
+    int start = 0;
+    int end = word.Length - 1;
+
+    while (start < end) 
     {
-        result += word[i];
+        if (word[start] != word[end]) 
+        {
+            return false;
+        }
+        start++;
+        end--;
     }
-    return result;
+
+    return true;
 }

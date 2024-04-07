@@ -657,53 +657,123 @@ else ipAddress is invalid
 // }
 
 
-// Game challenge for creating methods
-Random random = new Random();
+// // Game challenge for creating methods
+// Random random = new Random();
 
-Console.WriteLine("Would you like to play? (Y/N)");
-if (ShouldPlay()) 
+// Console.WriteLine("Would you like to play? (Y/N)");
+// if (ShouldPlay()) 
+// {
+//     PlayGame();
+// }
+
+// bool ShouldPlay() 
+// {
+//     string response = Console.ReadLine();
+//     return response.ToLower().Equals("y");
+// }
+
+// void PlayGame() 
+// {
+//     var play = true;
+
+//     while (play) {
+//         var target = GetTarget();
+//         var roll = RollDice();
+
+//         Console.WriteLine($"Roll a number greater than {target} to win!");
+//         Console.WriteLine($"You rolled a {roll}");
+//         Console.WriteLine(WinOrLose(roll, target));
+//         Console.WriteLine("\nPlay again? (Y/N)");
+
+//         play = ShouldPlay();
+//     }
+// }
+
+// int GetTarget()
+// {
+//     return random.Next(1, 6);
+// }
+
+// int RollDice()
+// {
+//     return random.Next(1, 7);
+// }
+
+// string WinOrLose(int roll, int target)
+// {
+//     if (roll > target)
+//     {
+//         return "You win!";
+//     }
+//     return "You lose dumbo!";
+// }
+
+// Guided project:
+using System;
+
+string[] pettingZoo = 
 {
-    PlayGame();
+    "alpacas", "capybaras", "chickens", "ducks", "emus", "geese", 
+    "goats", "iguanas", "kangaroos", "lemurs", "llamas", "macaws", 
+    "ostriches", "pigs", "ponies", "rabbits", "sheep", "tortoises",
+};
+
+PlanSchoolVisit("School A");
+PlanSchoolVisit("School B", 3);
+PlanSchoolVisit("School C", 2);
+
+void PlanSchoolVisit(string schoolName, int groups = 6) 
+{
+    RandomizeAnimals(); 
+    string[,] group1 = AssignGroup(groups);
+    Console.WriteLine(schoolName);
+    PrintGroup(group1);
 }
 
-bool ShouldPlay() 
+void RandomizeAnimals() 
 {
-    string response = Console.ReadLine();
-    return response.ToLower().Equals("y");
-}
+    Random random = new Random();
 
-void PlayGame() 
-{
-    var play = true;
-
-    while (play) {
-        var target = GetTarget();
-        var roll = RollDice();
-
-        Console.WriteLine($"Roll a number greater than {target} to win!");
-        Console.WriteLine($"You rolled a {roll}");
-        Console.WriteLine(WinOrLose(roll, target));
-        Console.WriteLine("\nPlay again? (Y/N)");
-
-        play = ShouldPlay();
-    }
-}
-
-int GetTarget()
-{
-    return random.Next(1, 6);
-}
-
-int RollDice()
-{
-    return random.Next(1, 7);
-}
-
-string WinOrLose(int roll, int target)
-{
-    if (roll > target)
+    for (int i = 0; i < pettingZoo.Length; i++) 
     {
-        return "You win!";
+        int r = random.Next(i, pettingZoo.Length);
+
+        string temp = pettingZoo[r];
+        pettingZoo[r] = pettingZoo[i];
+        pettingZoo[i] = temp;
     }
-    return "You lose dumbo!";
 }
+
+string[,] AssignGroup(int groups = 6) 
+{
+    string[,] result = new string[groups, pettingZoo.Length/groups];
+    int start = 0;
+
+    for (int i = 0; i < groups; i++) 
+    {
+        for (int j = 0; j < result.GetLength(1); j++) 
+        {
+            result[i,j] = pettingZoo[start++];
+        }
+    }
+
+    return result;
+}
+
+void PrintGroup(string[,] groups) 
+{
+    for (int i = 0; i < groups.GetLength(0); i++) 
+    {
+        Console.Write($"Group {i + 1}: ");
+        for (int j = 0; j < groups.GetLength(1); j++) 
+        {
+            Console.Write($"{groups[i,j]}  ");
+        }
+        Console.WriteLine();
+    }
+}
+
+// foreach(string animal in pettingZoo) 
+// {
+//     Console.WriteLine(animal);
+// }

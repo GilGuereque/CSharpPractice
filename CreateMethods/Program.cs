@@ -456,16 +456,46 @@ else ipAddress is invalid
 // 	}
 
 
-// Create C# Methods that return values:
-void Update();
+// // Create C# Methods that return values:
+// void Update();
 
-int[] GetEnemyCoordinates(string enemyId);
-int[] GetDistanceFromHero(string enemyId);
-int[] GetHeroCoordinates();
+// int[] GetEnemyCoordinates(string enemyId);
+// int[] GetDistanceFromHero(string enemyId);
+// int[] GetHeroCoordinates();
 
-bool EnemyCanHitHero(string enemyId);
-int GetEnemyDamageOutput(string enemyId);
-void UpdateHeroHP(int damage);
+// bool EnemyCanHitHero(string enemyId);
+// int GetEnemyDamageOutput(string enemyId);
+// void UpdateHeroHP(int damage);
 
-// void methods do not return values and only perform operations:
-void PrintMessage(string message)
+// // void methods do not return values and only perform operations:
+// void PrintMessage(string message)
+
+// use methods to calculate the total purchase price
+double total = 0;
+double minimumspend = 30.00;
+
+double[] items = {15.97, 3.50, 12.25, 22.99, 10.98};
+double[] discounts = {0.30, 0.00, 0.10, 0.20, 0.50};
+
+Console.WriteLine($"Total: ${total}");
+
+// changing from void to double in the method signature 
+// shows that this method returns a double data type
+double GetDiscountedPrice(int itemIndex)
+{
+    // double result = items[itemIndex] * (1 - discounts[itemIndex]);
+    // return result;
+    return items[itemIndex] * (1 - discounts[itemIndex]);
+}
+
+bool TotalMeetsMinimum()
+{
+    // Check if the total meets the minimum\
+    return total >= minimumspend;
+}
+
+string FormatDecimal(double input)
+{
+    // Format the double so only 2 decimal places are displayed
+    return input.ToString().Substring(0, 5);
+}

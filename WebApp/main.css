@@ -1,6 +1,15 @@
-body {
-    font-family: sans-serif;
+:root {
+    --black: #000000;
+    --white: #FFFFFF;
+    --aqua: aqua;
+    --green: #00FF00;
 }
+
+body {
+    background: var(--bg);
+    color: var(--fontColor);
+    font-family: helvetica;
+  }
 
 ul {
     font-family: helvetica;
@@ -19,6 +28,10 @@ li {
 }
 
 .light-theme {
-    color: black;
-    background: aqua;
+    --bg: var(--aqua);
+    --fontColor: var(--black);
+}
+.dark-theme {
+    --bg: var(--black);
+    --fontColor: var(--aqua);
 }

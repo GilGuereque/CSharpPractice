@@ -1,0 +1,15 @@
+D:\Academia\Projects\CSharpProjects\CSharpPractice\CreateMethods\bin\Debug\net8.0\CreateMethods.exe
+D:\Academia\Projects\CSharpProjects\CSharpPractice\CreateMethods\bin\Debug\net8.0\CreateMethods.deps.json
+D:\Academia\Projects\CSharpProjects\CSharpPractice\CreateMethods\bin\Debug\net8.0\CreateMethods.runtimeconfig.json
+D:\Academia\Projects\CSharpProjects\CSharpPractice\CreateMethods\bin\Debug\net8.0\CreateMethods.dll
+D:\Academia\Projects\CSharpProjects\CSharpPractice\CreateMethods\bin\Debug\net8.0\CreateMethods.pdb
+D:\Academia\Projects\CSharpProjects\CSharpPractice\CreateMethods\obj\Debug\net8.0\CreateMethods.GeneratedMSBuildEditorConfig.editorconfig
+D:\Academia\Projects\CSharpProjects\CSharpPractice\CreateMethods\obj\Debug\net8.0\CreateMethods.AssemblyInfoInputs.cache
+D:\Academia\Projects\CSharpProjects\CSharpPractice\CreateMethods\obj\Debug\net8.0\CreateMethods.AssemblyInfo.cs
+D:\Academia\Projects\CSharpProjects\CSharpPractice\CreateMethods\obj\Debug\net8.0\CreateMethods.csproj.CoreCompileInputs.cache
+D:\Academia\Projects\CSharpProjects\CSharpPractice\CreateMethods\obj\Debug\net8.0\CreateMethods.sourcelink.json
+D:\Academia\Projects\CSharpProjects\CSharpPractice\CreateMethods\obj\Debug\net8.0\CreateMethods.dll
+D:\Academia\Projects\CSharpProjects\CSharpPractice\CreateMethods\obj\Debug\net8.0\refint\CreateMethods.dll
+D:\Academia\Projects\CSharpProjects\CSharpPractice\CreateMethods\obj\Debug\net8.0\CreateMethods.pdb
+D:\Academia\Projects\CSharpProjects\CSharpPractice\CreateMethods\obj\Debug\net8.0\CreateMethods.genruntimeconfig.cache
+D:\Academia\Projects\CSharpProjects\CSharpPractice\CreateMethods\obj\Debug\net8.0\ref\CreateMethods.dll

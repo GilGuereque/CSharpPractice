@@ -1,0 +1,15 @@
+D:\Academia\Projects\CSharpProjects\CSharpPractice\DebuggingApps\bin\Debug\net8.0\DebuggingApps.exe
+D:\Academia\Projects\CSharpProjects\CSharpPractice\DebuggingApps\bin\Debug\net8.0\DebuggingApps.deps.json
+D:\Academia\Projects\CSharpProjects\CSharpPractice\DebuggingApps\bin\Debug\net8.0\DebuggingApps.runtimeconfig.json
+D:\Academia\Projects\CSharpProjects\CSharpPractice\DebuggingApps\bin\Debug\net8.0\DebuggingApps.dll
+D:\Academia\Projects\CSharpProjects\CSharpPractice\DebuggingApps\bin\Debug\net8.0\DebuggingApps.pdb
+D:\Academia\Projects\CSharpProjects\CSharpPractice\DebuggingApps\obj\Debug\net8.0\DebuggingApps.GeneratedMSBuildEditorConfig.editorconfig
+D:\Academia\Projects\CSharpProjects\CSharpPractice\DebuggingApps\obj\Debug\net8.0\DebuggingApps.AssemblyInfoInputs.cache
+D:\Academia\Projects\CSharpProjects\CSharpPractice\DebuggingApps\obj\Debug\net8.0\DebuggingApps.AssemblyInfo.cs
+D:\Academia\Projects\CSharpProjects\CSharpPractice\DebuggingApps\obj\Debug\net8.0\DebuggingApps.csproj.CoreCompileInputs.cache
+D:\Academia\Projects\CSharpProjects\CSharpPractice\DebuggingApps\obj\Debug\net8.0\DebuggingApps.sourcelink.json
+D:\Academia\Projects\CSharpProjects\CSharpPractice\DebuggingApps\obj\Debug\net8.0\DebuggingApps.dll
+D:\Academia\Projects\CSharpProjects\CSharpPractice\DebuggingApps\obj\Debug\net8.0\refint\DebuggingApps.dll
+D:\Academia\Projects\CSharpProjects\CSharpPractice\DebuggingApps\obj\Debug\net8.0\DebuggingApps.pdb
+D:\Academia\Projects\CSharpProjects\CSharpPractice\DebuggingApps\obj\Debug\net8.0\DebuggingApps.genruntimeconfig.cache
+D:\Academia\Projects\CSharpProjects\CSharpPractice\DebuggingApps\obj\Debug\net8.0\ref\DebuggingApps.dll

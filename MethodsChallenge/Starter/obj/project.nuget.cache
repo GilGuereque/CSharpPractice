@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "XkiAJkPzO1pV2JaMGNUEGPvF468eat2/QhORxOLj7JVShnjo1DM/D3UipdHbuV65rv4fegkTO1LJtBdZ4AksWg==",
+  "success": true,
+  "projectFilePath": "D:\\Academia\\Projects\\CSharpProjects\\CSharpPractice\\MethodsChallenge\\Starter\\Starter.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\prakt\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.25\\microsoft.netcore.app.ref.6.0.25.nupkg.sha512",
+    "C:\\Users\\prakt\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.25\\microsoft.windowsdesktop.app.ref.6.0.25.nupkg.sha512",
+    "C:\\Users\\prakt\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.25\\microsoft.aspnetcore.app.ref.6.0.25.nupkg.sha512",
+    "C:\\Users\\prakt\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.25\\microsoft.netcore.app.host.win-x64.6.0.25.nupkg.sha512"
+  ],
+  "logs": []
+}

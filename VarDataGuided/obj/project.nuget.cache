@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "N+FEvCNczAwo1gD9He2p2TN7C98oPdsq4oYWdanTGr+FtscHTEFmk1+4Un4jExp/eRjoeGhl4L+/76GsKJCs2Q==",
+  "success": true,
+  "projectFilePath": "D:\\Academia\\Projects\\CSharpProjects\\CSharpPractice\\VarDataGuided\\Starter.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\prakt\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.14\\microsoft.netcore.app.ref.7.0.14.nupkg.sha512",
+    "C:\\Users\\prakt\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.14\\microsoft.windowsdesktop.app.ref.7.0.14.nupkg.sha512",
+    "C:\\Users\\prakt\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.14\\microsoft.aspnetcore.app.ref.7.0.14.nupkg.sha512",
+    "C:\\Users\\prakt\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\7.0.14\\microsoft.netcore.app.host.win-x64.7.0.14.nupkg.sha512"
+  ],
+  "logs": []
+}

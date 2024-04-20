@@ -21,4 +21,11 @@
 // Console.WriteLine($"decimal: {decimal.MinValue} to {decimal.MaxValue} (with 28-29 digits of precision)");
 
 // Reference Data Types
-int[] data = new int[3];
+// int[] data = new int[3];
+
+
+// Casting & Converting data types
+int first = 2;
+string second = "4";
+int result = first + second;
+Console.WriteLine(result);

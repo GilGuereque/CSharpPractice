@@ -22,6 +22,26 @@ string favoriteFood = Console.ReadLine();
 Console.WriteLine($"Thank you {name}! I also love {favoriteFood} by the way.");
 Console.WriteLine($"You don't look your age at all! I am surprised you are: {age}");
 
+Console.WriteLine();
+Console.WriteLine();
+
+
+// OOP Practice:
+var internationalPizzaDay23 = new DateTime(2023, 2, 9);
+
+Console.WriteLine("Year is " + internationalPizzaDay23.Year);
+Console.WriteLine("Month is " + internationalPizzaDay23.Month);
+Console.WriteLine("Day is " + internationalPizzaDay23.Day);
+Console.WriteLine("Day of the week is " + internationalPizzaDay23.DayOfWeek);
+
+var internationalPizzaDay24 = internationalPizzaDay23.AddYears(1);
+
+Console.WriteLine("Year is " + internationalPizzaDay24.Year);
+Console.WriteLine("Month is " + internationalPizzaDay24.Month);
+Console.WriteLine("Day is " + internationalPizzaDay24.Day);
+Console.WriteLine("Day of the week is " + internationalPizzaDay24.DayOfWeek);
+
+
 // Pause program
 Console.WriteLine();
 Console.WriteLine("Press enter to exit program.");

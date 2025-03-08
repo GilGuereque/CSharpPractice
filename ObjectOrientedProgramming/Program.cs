@@ -42,7 +42,29 @@ Console.WriteLine("Day is " + internationalPizzaDay24.Day);
 Console.WriteLine("Day of the week is " + internationalPizzaDay24.DayOfWeek);
 
 
+// Creating our first class
+var rectangle1 = new Rectangle();
+
+Console.WriteLine("Width is " + rectangle1.width);
+Console.WriteLine("Height is " + rectangle1.height);
+
+//Console.ReadKey();
+
 // Pause program
 Console.WriteLine();
 Console.WriteLine("Press enter to exit program.");
 Console.ReadKey();
+
+class Rectangle
+{
+    public int width;
+    public int height;
+
+    void DummyMethod()
+    {
+        Console.WriteLine("Height is " + height);
+    }
+}
+// for example we could have to 2 instances of rectangles with different measurements
+
+

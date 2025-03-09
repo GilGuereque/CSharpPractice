@@ -67,6 +67,11 @@ Console.WriteLine($"Hello {hotelBooking1.GuestName}, your check-in date is: {hot
 
 //Console.ReadKey();
 
+//// Testing await method
+//Console.Write("Hello ");
+//await Task.Delay(5000);
+//Console.WriteLine("World!");
+
 // Pause program
 Console.WriteLine();
 Console.WriteLine("Press enter to exit program.");

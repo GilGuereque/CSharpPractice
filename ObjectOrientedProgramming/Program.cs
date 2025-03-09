@@ -47,19 +47,19 @@
 using System.Security.Cryptography.X509Certificates;
 
 var rectangle1 = new Rectangle(5, 10);
-var calculator = new ShapesMeasurementsCalculator(rectangle1)
+//var calculator = new ShapesMeasurementsCalculator(rectangle1);
 
 Console.WriteLine("Width is " + rectangle1.Width);
 Console.WriteLine("Height is " + rectangle1.Height);
-Console.WriteLine("Area is " + rectangle1.CalculateArea());
-Console.WriteLine("Circumference is " + rectangle1.CalculateCircumference());
+//Console.WriteLine("Area is " + rectangle1.CalculateArea());
+//Console.WriteLine("Circumference is " + rectangle1.CalculateCircumference());
 
 var rectangle2 = new Rectangle(10, 20);
 
-Console.WriteLine("Width is " + rectangle2.Width);
-Console.WriteLine("Height is " + rectangle2.Height);
-Console.WriteLine("Area is " + rectangle2.CalculateArea());
-Console.WriteLine("Circumference is " + rectangle2.CalculateCircumference());
+//Console.WriteLine("Width is " + rectangle2.Width);
+//Console.WriteLine("Height is " + rectangle2.Height);
+//Console.WriteLine("Area is " + rectangle2.CalculateArea());
+//Console.WriteLine("Circumference is " + rectangle2.CalculateCircumference());
 
 Console.WriteLine();
 
@@ -80,6 +80,15 @@ Console.WriteLine($"Hello {hotelBooking1.GuestName}, your check-in date is: {hot
 //await Task.Delay(5000);
 //Console.WriteLine("World!");
 
+var medicalAppointment = new MedicalAppointment(
+    "John Smith", new DateTime(2023, 4, 3));
+
+// overwrite month and day
+medicalAppointment.OverwriteMonthAndDay(5, 1);
+
+// add a given number of months and days
+medicalAppointment.MoveByMonthsAndDays(1, 2);
+
 // Pause program
 Console.WriteLine();
 Console.WriteLine("Press enter to exit program.");
@@ -98,16 +107,50 @@ class Rectangle
 
 }
 
-class ShapesMeasurementsCalculator
+//class ShapesMeasurementsCalculator
+//{
+//    public ShapesMeasurementsCalculator(Rectangle rectangle)
+//    {
+            
+//    }
+//    public int CalculateCircumference(rectangle)
+//    {
+//        return 2 * rectangle.Width + 2 * rectangle.Height;
+//    }
+
+//    public int CalculateArea(Rectangle rectangle)
+//    {
+//        return rectangle.Width * rectangle.Height;
+//    }
+//}
+
+class MedicalAppointment
 {
-    public int CalculateCircumference(Rectangle rectangle)
+    private string _patientName;
+    private DateTime _date;
+
+    public MedicalAppointment(string patientName, DateTime date)
     {
-        return 2 * rectangle.Width + 2 * rectangle.Height;
+        _patientName = patientName;
+        _date = date;
     }
 
-    public int CalculateArea(Rectangle rectangle)
+    public void Reschedule(DateTime date)
     {
-        return rectangle.Width * rectangle.Height;
+        _date = date;
+    }
+
+    public void OverwriteMonthAndDay(int month, int day)
+    {
+        _date = new DateTime(_date.Year, month, day);
+    }
+
+    public void MoveByMonthsAndDays(int monthsToAdd, int daysToAdd)
+    {
+        _date = new DateTime(
+            _date.Year,
+            _date.Month + monthsToAdd,
+            _date.Day + daysToAdd);
     }
 }
 
@@ -115,8 +158,7 @@ class ListElementsAdder
 {
     public void Add(int itemToBeAdded, List<int> list)
     {
-        // add item to the list
-        list.Count++;
+        //public list.Count;
     }
 }
 
@@ -138,9 +180,9 @@ class HotelBooking
 // for example we could have to 2 instances of rectangles with different measurements
 
 
-var square = new Square(10);
-Console.WriteLine(
-    "Square side is: " + square.Side);
+//var square = new Square(10);
+//Console.WriteLine(
+//    "Square side is: " + square.Side);
 
 public class Square
 {
@@ -153,11 +195,10 @@ public class Square
 
 
 // Coding exercise:
-using System;
+//using System;
 
-namespace Coding.Exercise
-{
-    public class Triangle
+//namespace Coding.Exercise
+    class Triangle
     {
         private int _base;
         private int _height;
@@ -171,7 +212,7 @@ namespace Coding.Exercise
 
         public int CalculateArea()
         {
-            return ((base * height) / 2);
+            return ((_base * _height) / 2);
         }
 
         public string AsString()
@@ -179,5 +220,4 @@ namespace Coding.Exercise
             return $"Base is {_base}, height is {_height}";
         }
     }
-}
 

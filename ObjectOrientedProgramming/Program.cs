@@ -44,15 +44,23 @@
 //Console.WriteLine();
 
 // Creating our first class
+using System.Security.Cryptography.X509Certificates;
+
 var rectangle1 = new Rectangle(5, 10);
+var calculator = new ShapesMeasurementsCalculator(rectangle1)
 
 Console.WriteLine("Width is " + rectangle1.Width);
 Console.WriteLine("Height is " + rectangle1.Height);
+Console.WriteLine("Area is " + rectangle1.CalculateArea());
+Console.WriteLine("Circumference is " + rectangle1.CalculateCircumference());
 
 var rectangle2 = new Rectangle(10, 20);
 
 Console.WriteLine("Width is " + rectangle2.Width);
 Console.WriteLine("Height is " + rectangle2.Height);
+Console.WriteLine("Area is " + rectangle2.CalculateArea());
+Console.WriteLine("Circumference is " + rectangle2.CalculateCircumference());
+
 Console.WriteLine();
 
 // Parse the date string into a DateTime object
@@ -87,6 +95,29 @@ class Rectangle
         Width = width;
         Height = height;
     }
+
+}
+
+class ShapesMeasurementsCalculator
+{
+    public int CalculateCircumference(Rectangle rectangle)
+    {
+        return 2 * rectangle.Width + 2 * rectangle.Height;
+    }
+
+    public int CalculateArea(Rectangle rectangle)
+    {
+        return rectangle.Width * rectangle.Height;
+    }
+}
+
+class ListElementsAdder
+{
+    public void Add(int itemToBeAdded, List<int> list)
+    {
+        // add item to the list
+        list.Count++;
+    }
 }
 
 
@@ -106,4 +137,47 @@ class HotelBooking
 }
 // for example we could have to 2 instances of rectangles with different measurements
 
+
+var square = new Square(10);
+Console.WriteLine(
+    "Square side is: " + square.Side);
+
+public class Square
+{
+    int Side = 5;
+    public Square(int side)
+    {
+        Side = side;
+    }
+}
+
+
+// Coding exercise:
+using System;
+
+namespace Coding.Exercise
+{
+    public class Triangle
+    {
+        private int _base;
+        private int _height;
+
+        public Triangle(int @base, int height)
+        {
+            _base = @base;
+            _height = height;
+
+        }
+
+        public int CalculateArea()
+        {
+            return ((base * height) / 2);
+        }
+
+        public string AsString()
+        {
+            return $"Base is {_base}, height is {_height}";
+        }
+    }
+}
 

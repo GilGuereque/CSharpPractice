@@ -1,5 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿Console.WriteLine("Hello, World!");
 
 // Ask the user for the program inputs needed
 Console.WriteLine("Please enter your preffered name here: ");
@@ -21,6 +20,17 @@ var person1 = new Person(person, age, favoriteFood);
 Console.WriteLine();
 person1.Introduce();
 
+
+// Bank Account Program
+Console.WriteLine();
+var bankAccount1 = new BankAccount("Gilberto Guereque", 350);
+
+// Perform some deposits/withdrawals
+bankAccount1.Deposit(3036);
+bankAccount1.Withdraw(2000);
+
+// Display final balance
+Console.WriteLine(bankAccount1.GetBalance());
 
 // Pause program
 Console.WriteLine();
@@ -48,3 +58,32 @@ class Person
     }
 }
 
+// Create a BankAccount class exercise
+class BankAccount
+{
+    public string AccountHolder { get; private set; }
+    public decimal Balance { get; private set; }
+
+    public BankAccount(string accountHolder, decimal balance)
+    {
+        AccountHolder = accountHolder;
+        Balance = balance;
+    }
+
+    public void Deposit(decimal addAmount)
+    {
+        Balance += addAmount;
+        Console.WriteLine($"Deposited ${addAmount}");
+    }
+
+    public void Withdraw(decimal minusAmount)
+    {
+        Balance -= minusAmount;
+        Console.WriteLine($"Withdrawn ${minusAmount}");
+    }
+
+    public string GetBalance()
+    {
+        return $"Current balance: ${Balance}";
+    }
+}

@@ -3,7 +3,7 @@
 Console.WriteLine("Hello, World!");
 
 // Ask the user for the program inputs needed
-Console.WriteLine("Please enter your preffered name here: ");
+Console.WriteLine("Please enter your preferred name here: ");
 string person = Console.ReadLine();
 
 Console.WriteLine();
@@ -34,6 +34,21 @@ bankAccount1.Withdraw(2000); // This should now trigger "Insufficient funds"
 
 // Display final balance
 Console.WriteLine(bankAccount1.GetBalance());
+
+// Medical Appointment program
+Console.WriteLine();
+var medicalAppointment = new MedicalAppointment(
+    "John Smith", new DateTime(2023, 4, 3));
+
+// Simple reschedule
+medicalAppointment.Reschedule(new DateTime(2023, 4, 4));
+
+// Creating medicalAppointments
+var appointmentTwoWeeksFromNow = new MedicalAppointment("Bob Smith", 14);
+var appointmentOneWeekFromNow = new MedicalAppointment("Margaret Smith");
+
+// Print appointment
+
 
 // Pause program
 Console.WriteLine();
@@ -103,25 +118,49 @@ class BankAccount
 
 }
 
+class MedicalAppointmentPrinter
+{
+    public void Print(MedicalAppointment medicalAppointment)
+    {
+        Console.WriteLine(
+            "Appointment will take place on " + medicalAppointment.GetDate());
+    }
+}
+
 // Practicing Overloading constructors
 class MedicalAppointment
 {
     private string _patientName;
     private DateTime _date;
     
-    public MedicalAppointment(string patientName) :
-        this(patientName, 7)
+    public MedicalAppointment(string patientName, DateTime date)
     {
+        _patientName = patientName;
+        _date = date;
     }
 
-    public MedicalAppointment(string patientName, int daysFromNow)
+    //public MedicalAppointment(string patientName) :
+    //    this(patientName, 7);
+    //{
+    //}
+
+    public MedicalAppointment(string patientName, int daysFromNow = 7)
     {
         _patientName = patientName;
         _date = DateTime.Now.AddDays(daysFromNow);
     }
 
+    public DateTime GetDate() => _date;
+
     public void Reschedule(DateTime date)
     {
         _date = date;
+        var printer = new MedicalAppointmentPrinter();
+        printer.Print(this);
+    }
+
+    public void OverwriteMonthAndDay(int month, int day)
+    {
+        _date = new DateTime(_date.Year, month, day);
     }
 }

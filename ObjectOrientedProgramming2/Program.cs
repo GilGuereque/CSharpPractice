@@ -1,4 +1,6 @@
-﻿Console.WriteLine("Hello, World!");
+﻿using System.Reflection.Metadata.Ecma335;
+
+Console.WriteLine("Hello, World!");
 
 // Ask the user for the program inputs needed
 Console.WriteLine("Please enter your preffered name here: ");
@@ -31,7 +33,7 @@ bankAccount1.Withdraw(2000);
 bankAccount1.Withdraw(2000); // This should now trigger "Insufficient funds"
 
 // Display final balance
-bankAccount1.GetBalance();
+Console.WriteLine(bankAccount1.GetBalance());
 
 // Pause program
 Console.WriteLine();
@@ -97,8 +99,29 @@ class BankAccount
         }
     }
 
-    public void GetBalance()
+    public string GetBalance() => $"Current balance: ${Balance}";
+
+}
+
+// Practicing Overloading constructors
+class MedicalAppointment
+{
+    private string _patientName;
+    private DateTime _date;
+    
+    public MedicalAppointment(string patientName) :
+        this(patientName, 7)
     {
-        Console.WriteLine($"Current balance: ${Balance}");
+    }
+
+    public MedicalAppointment(string patientName, int daysFromNow)
+    {
+        _patientName = patientName;
+        _date = DateTime.Now.AddDays(daysFromNow);
+    }
+
+    public void Reschedule(DateTime date)
+    {
+        _date = date;
     }
 }

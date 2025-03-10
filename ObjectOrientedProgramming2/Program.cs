@@ -28,9 +28,10 @@ var bankAccount1 = new BankAccount("Gilberto Guereque", 350);
 // Perform some deposits/withdrawals
 bankAccount1.Deposit(3036);
 bankAccount1.Withdraw(2000);
+bankAccount1.Withdraw(2000); // This should now trigger "Insufficient funds"
 
 // Display final balance
-Console.WriteLine(bankAccount1.GetBalance());
+bankAccount1.GetBalance();
 
 // Pause program
 Console.WriteLine();
@@ -72,18 +73,32 @@ class BankAccount
 
     public void Deposit(decimal addAmount)
     {
-        Balance += addAmount;
-        Console.WriteLine($"Deposited ${addAmount}");
+        if (addAmount <= 0)
+        {
+            Console.WriteLine("Sorry! This is an invalid deposit. The amount must be greater than $0.");
+        }
+        else
+        {
+            Balance += addAmount;
+            Console.WriteLine($"Deposited ${addAmount}");
+        }
     }
 
     public void Withdraw(decimal minusAmount)
     {
-        Balance -= minusAmount;
-        Console.WriteLine($"Withdrawn ${minusAmount}");
+        if (minusAmount > Balance)
+        {
+            Console.WriteLine("Sorry, insufficient funds! Withdrawal has been canceled.");
+        }
+        else
+        {
+            Balance -= minusAmount;
+            Console.WriteLine($"Withdrawn ${minusAmount}");
+        }
     }
 
-    public string GetBalance()
+    public void GetBalance()
     {
-        return $"Current balance: ${Balance}";
+        Console.WriteLine($"Current balance: ${Balance}");
     }
 }

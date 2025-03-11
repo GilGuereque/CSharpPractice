@@ -50,6 +50,18 @@ var appointmentOneWeekFromNow = new MedicalAppointment("Margaret Smith");
 // Print appointment
 
 
+// Dog class
+var balto = new Dog("Balto", "Siberian Husky", 18);
+var nova = new Dog("Nova", "Australian Cattle Dog Mix", 27);
+var ruby = new Dog("Ruby", "Pomeranian Mix", 4);
+var hercules = new Dog("Hercules", "German Sherperd", 35);
+//var zero = new Dog("Hercules", "German Sherperd", 0);
+
+Console.WriteLine(balto.Describe());
+Console.WriteLine(nova.Describe());
+Console.WriteLine(ruby.Describe());
+Console.WriteLine(hercules.Describe());
+
 // Pause program
 Console.WriteLine();
 Console.WriteLine("Press enter to end program.");
@@ -173,31 +185,42 @@ class Dog
     public string Breed;
     public int Weight;
 
-    public Dog(string name, int weight )
-        : this(name, weight) // calling the second contstructor
-    {
-    }
+
 
     public Dog(string name, string breed, int weight)
     {
-        Name = name;
-        Breed = breed;
-        Weight = weight;
+        if (weight <= 0)
+        {
+            Console.WriteLine("Weight must be a positive number.");
+        }
+        else
+        {
+            Name = name;
+            Breed = breed;
+            Weight = weight;
+        }
+    }
+
+    public Dog(string name, int weight)
+        : this(name, "mixed-breed", weight)
+    {
+        //Name = name;
+        //Weight = weight;
     }
 
     public string Describe()
     {
         if (Weight < 5)
         {
-            return $"For a dog named Lucky, it's a {Breed}, and it weighs {Weight} kilograms, so it's a tiny dog.";
+            return $"For a dog named {Name}, it's a {Breed}, and it weighs {Weight} kilograms, so it's a tiny dog.";
         }
-        else if (Weight >= 5) || (Weight < 30)
+        else if (Weight < 30)
         {
-            return $"For a dog named Lucky, it's a {Breed}, and it weighs {Weight} kilograms, so it's a medium dog.";
+            return $"For a dog named {Name}, it's a {Breed}, and it weighs {Weight} kilograms, so it's a medium dog.";
         }
         else
         {
-            return $"For a dog named Lucky, it's a {Breed}, and it weighs {Weight} kilograms, so it's a large dog.";
+            return $"For a dog named {Name}, it's a {Breed}, and it weighs {Weight} kilograms, so it's a large dog.";
         }
     }
 }

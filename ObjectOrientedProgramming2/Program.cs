@@ -164,3 +164,40 @@ class MedicalAppointment
         _date = new DateTime(_date.Year, month, day);
     }
 }
+
+
+// Dog Class Assignment
+class Dog
+{
+    public string Name;
+    public string Breed;
+    public int Weight;
+
+    public Dog(string name, int weight )
+        : this(name, weight) // calling the second contstructor
+    {
+    }
+
+    public Dog(string name, string breed, int weight)
+    {
+        Name = name;
+        Breed = breed;
+        Weight = weight;
+    }
+
+    public string Describe()
+    {
+        if (Weight < 5)
+        {
+            return $"For a dog named Lucky, it's a {Breed}, and it weighs {Weight} kilograms, so it's a tiny dog.";
+        }
+        else if (Weight >= 5) || (Weight < 30)
+        {
+            return $"For a dog named Lucky, it's a {Breed}, and it weighs {Weight} kilograms, so it's a medium dog.";
+        }
+        else
+        {
+            return $"For a dog named Lucky, it's a {Breed}, and it weighs {Weight} kilograms, so it's a large dog.";
+        }
+    }
+}

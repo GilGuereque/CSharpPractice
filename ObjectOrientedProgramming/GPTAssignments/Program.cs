@@ -1,4 +1,6 @@
-﻿Console.WriteLine("Hello, World!");
+﻿using System.Numerics;
+
+Console.WriteLine("Hello, World!");
 Console.WriteLine("This program lets you know if a number is even or odd.");
 
 bool userContinue = true;
@@ -7,10 +9,10 @@ while (userContinue)
 {
     Console.WriteLine("\nPlease enter a number, and we will tell you if its even or odd. Enter here: ");
     string userInput = Console.ReadLine();
-    int number;
+    BigInteger number;
 
     // Parse number and validate its a numerical value
-    if (!int.TryParse(userInput, out number))
+    if (!BigInteger.TryParse(userInput, out number))
     {
         Console.WriteLine("You must enter a numerical value. Please try again.");
             continue; // Skip to the next iteration if parsing fails

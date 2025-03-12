@@ -62,6 +62,10 @@ Console.WriteLine(nova.Describe());
 Console.WriteLine(ruby.Describe());
 Console.WriteLine(hercules.Describe());
 
+// Practicing const & readonly 
+var rectangle1 = new Rectangle(5, 10);
+//rectangle1.Width = 10; // this would error out
+
 // Pause program
 Console.WriteLine();
 Console.WriteLine("Press enter to end program.");
@@ -177,9 +181,38 @@ class MedicalAppointment
     }
 }
 
+// Practicing const & readonly 
+//var rectangle1 = new Rectangle(5, 10);
+//rectangle1.Width = 10; // this would error out
 
-// Dog Class Assignment
-class Dog
+class Rectangle
+{
+    const int NumberOfSides = 4; // const value to the class
+    readonly int NumberOfSidesReadonly; // readonly value
+    public readonly int Width; // makes the fields readonly
+    public readonly int Height;
+
+    public Rectangle(int width, int height)
+    {
+        NumberOfSidesReadonly = 4;
+        Width = GetLengthOrDefault(width, nameof(Width)); // you can still assign the value in the constructor
+        Height = GetLengthOrDefault(height, nameof(Height));
+    }
+
+    private int GetLengthOrDefault(int length, string name)
+    {
+        const int defaultValueIfNonPositive = 1; // make this a const value since it won't ever change
+        if (length <= 0)
+        {
+            Console.WriteLine($"{name} must be a postive number.");
+            return defaultValueIfNonPositive;
+        }
+        return length;
+    }
+}
+
+    // Dog Class Assignment
+    class Dog
 {
     public string Name;
     public string Breed;

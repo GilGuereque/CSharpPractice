@@ -22,22 +22,35 @@ class Rectangle
         _height = GetLengthOrDefault(height, nameof(_height));
     }
 
-    private int _width;
-
     // Creating a Width property with a getter and setter
-    public int Width
-    {
-        get
-        {
-            return _width;
-        }
-        set
-        {
-            _width = value;
-        }
-    }
+    public int Width { get; private set; }
+
+    //public int Width
+    //{
+    //    get
+    //    {
+    //        return _width;
+    //    }
+    //    set
+    //    {
+    //        if (value > 10)
+    //        {
+    //            _width = value;
+    //        }
+    //    }
+    //}
 
     private int _height;
+
+    public int GetHeight() => _height;
+
+    public void SetHeight(int value)
+    {
+        if(value > 0)
+        {
+            _height = value;
+        }
+    }
 
     private int GetLengthOrDefault(int length, string name)
     {
@@ -49,14 +62,32 @@ class Rectangle
         }
         return length;
     }
+}
 
-    public int GetHeight() => _height;
+// Properties & getter / setter assignment
+public class Order
+{
+    public string Item { get; }
 
-    public void SetHeight(int value)
+    private DateTime _date;
+    public DateTime Date
     {
-        if(value > 0)
+        get
         {
-            _height = value;
+            return _date;
         }
+        set
+        {
+            if (value.Year == DateTime.Now.Year)
+            {
+                _date = value;
+            }
+        }
+    }
+
+    public Order(string item, DateTime date)
+    {
+        Item = item;
+        Date = date;
     }
 }

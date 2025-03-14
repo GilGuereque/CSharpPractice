@@ -45,3 +45,56 @@ string ReverseString(string input)
     // Create a new string from the reversed array and return it.
     return new string(charArray);
 }
+
+// object initializers
+var person = new Person
+{
+    Name = "John",
+    YearOfBirth = 1981
+};
+
+person.Name = "Henry";
+
+
+
+class Person
+{
+    public string Name { get; set; }
+    public int YearOfBirth { get; init; }
+
+    public Person(string name)
+    {
+        Name = Name;
+    }
+
+    //public Person(string name, int yearOfBirth)
+    //{
+    //    Name = name;
+    //    YearOfBirth = yearOfBirth;
+    //}
+}
+
+// Computed properties exercise
+using System;
+
+namespace Coding.Exercise
+{
+    public class DailyAccountState
+    {
+        public int InitialState { get; }
+
+        public int SumOfOperations { get; }
+
+        public DailyAccountState(
+            int initialState,
+            int sumOfOperations)
+        {
+            InitialState = initialState;
+            SumOfOperations = sumOfOperations;
+        }
+
+        public int EndOfDayState => InitialState + SumOfOperations;
+
+        public string Report => $"Day: {DateTime.Now.Day}, month: {DateTime.Now.Month}, year: {DateTime.Now.Year}, initial state: {InitialState}, end of day state: {EndOfDayState}";
+    }
+}

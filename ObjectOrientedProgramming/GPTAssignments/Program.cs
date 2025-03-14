@@ -33,3 +33,15 @@ while (userContinue)
         userContinue = false;
     }
 }
+
+string ReverseString(string input)
+{
+    // Convert the input string to an array of characters.
+    char[] charArray = input.ToCharArray();
+
+    // Reverse the order of the elements in the array
+    Array.Reverse(charArray);
+
+    // Create a new string from the reversed array and return it.
+    return new string(charArray);
+}

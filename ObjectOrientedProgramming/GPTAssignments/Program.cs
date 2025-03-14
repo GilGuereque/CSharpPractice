@@ -8,7 +8,7 @@ bool userContinue = true;
 while (userContinue)
 {
     Console.WriteLine("\nPlease enter a number, and we will tell you if its even or odd. Enter here: ");
-    string userInput = Console.ReadLine();
+    string userInput = Console.ReadLine().Trim();
     BigInteger number;
 
     // Parse number and validate its a numerical value
@@ -27,7 +27,7 @@ while (userContinue)
         Console.WriteLine("Odd");
     }
     Console.WriteLine("\nPress 0 to exit program, otherwise Enter to continue running it. Enter here: ");
-    string userChoice = Console.ReadLine();
+    string userChoice = Console.ReadLine().Trim();
     if (userChoice == "0")
     {
         userContinue = false;

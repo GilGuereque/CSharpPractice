@@ -91,3 +91,27 @@ public class Order
         Date = date;
     }
 }
+
+
+namespace Converter
+{
+    public class Converter
+    {
+        public string dnaToRna(string dna)
+        {
+            Console.WriteLine("Enter the DNA string you want converted to RNA here: ");
+            string dna = Console.ReadLine();
+            if (!IsNullOrWhiteSpace(dna))
+            {
+                string rna = dna.Replace('T', 'U');
+                rna = dna;
+                return rna;
+                //         return string rna = dna.SubString(3) + "U";
+            }
+            else
+            {
+                Console.WriteLine("Please enter a valid dna value.");
+            }
+        }
+    }
+}

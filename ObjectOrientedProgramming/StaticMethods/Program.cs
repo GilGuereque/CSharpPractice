@@ -34,3 +34,22 @@ class Rectangle
     public static string DescribeGenerally() =>
         $"A plane figure with four straight sides and four right angles.";
 }
+
+// String Split & Join exercise
+using System;
+
+namespace Coding.Exercise
+{
+    public static class StringsTransformator
+    {
+        public static string TransformSeparators(
+            string input,
+            string originalSeparator,
+            string targetSeparator)
+        {
+            string[] splitArray = input.Split(originalSeparator);
+            string result = string.Join(targetSeparator, splitArray);
+            return result;
+        }
+    }
+}

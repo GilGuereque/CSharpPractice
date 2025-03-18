@@ -23,25 +23,31 @@ Console.WriteLine(names.Format());
 
 Console.ReadLine();
 
-public class Names
+// Extracted IsValidName method to create its own class with
+class NamesValidator
 {
-    private readonly List<string> _names = new List<string>();
-
-    public void AddName(string name)
-    {
-        if (IsValidName(name))
-        {
-            _names.Add(name);
-        }
-    }
-
-    private bool IsValidName(string name)
+    public bool IsValid(string name)
     {
         return
             name.Length >= 2 &&
             name.Length < 25 &&
             char.IsUpper(name[0]) &&
             name.All(char.IsLetter);
+    }
+}
+
+public class Names
+{
+    private readonly List<string> _names = new List<string>();
+    private readonly NameValidator _namesValidator = new NameValidator();
+
+    public void AddName(string name)
+    {
+        //var namesValidator = new NamesValidator();
+        if (_namesValidator().IsValid(name))
+        {
+            _names.Add(name);
+        }
     }
 
     public void ReadFromTextFile()

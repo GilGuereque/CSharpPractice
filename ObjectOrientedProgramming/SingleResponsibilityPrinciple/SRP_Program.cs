@@ -1,5 +1,5 @@
 ﻿var names = new Names();
-var path = names.BuildFilePath();
+var path = new NamesFilePathBuilder().BuildFilePath();
 var stringsTextualRepository = new StringsTextualRepository();
 
 if (File.Exists(path))
@@ -19,11 +19,10 @@ else
     names.AddName("123 definitely not a valid name");
 
     Console.WriteLine("Saving names to the file.");
-    names.Write();
+    stringsTextualRepository.Write(path, names.All);
 }
-Console.WriteLine(names.Format());
-
-Console.ReadLine();
+Console.WriteLine(new NamesFormatter().Format(names.All));
+Console.ReadKey();
 
 // Extracted IsValidName method to create its own class with
 class NamesValidator
@@ -38,6 +37,7 @@ class NamesValidator
     }
 }
 
+// Extracted the Read & Write methods to create a Textual Repository class
 class StringsTextualRepository
 {
     private static readonly string Separator = Environment.NewLine;
@@ -54,9 +54,29 @@ class StringsTextualRepository
     }       
 }
 
+// Extracted BuildFilePath method to create a File Path builder class
+class NamesFilePathBuilder
+{
+    public string BuildFilePath()
+    {
+        //we could imagine this is much more complicated
+        //for example that path is provided by the user and validated
+        return "names.txt";
+    }
+}
+
+// Extracted Format method to create a NamesFormatter class
+class NamesFormatter
+{
+    public string Format(List<string> names)
+    {
+        return string.Join(Environment.NewLine, names);
+    }
+}
+
 public class Names
 {
-    private List<string> _names = new List<string>();
+    public List<string> All { get; } = new List<string>();
     private readonly NamesValidator _namesValidator = new NamesValidator();
 
     public void AddNames(List<string> stringsFromFile)
@@ -72,17 +92,7 @@ public class Names
         //var namesValidator = new NamesValidator();
         if (_namesValidator.IsValid(name))
         {
-            _names.Add(name);
+            All.Add(name);
         }
     }
-
-    public string BuildFilePath()
-    {
-        //we could imagine this is much more complicated
-        //for example that path is provided by the user and validated
-        return "names.txt";
-    }
-
-    public string Format() =>
-        string.Join(Environment.NewLine, _names);
 }

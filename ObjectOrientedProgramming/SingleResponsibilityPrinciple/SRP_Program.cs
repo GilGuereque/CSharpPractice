@@ -1,4 +1,6 @@
-﻿var names = new Names();
+﻿using SingleResponsibilityPrinciple.DataAccess;
+
+var names = new Names();
 var path = new NamesFilePathBuilder().BuildFilePath();
 var stringsTextualRepository = new StringsTextualRepository();
 
@@ -23,23 +25,3 @@ else
 }
 Console.WriteLine(new NamesFormatter().Format(names.All));
 Console.ReadKey();
-
-// Extracted BuildFilePath method to create a File Path builder class
-class NamesFilePathBuilder
-{
-    public string BuildFilePath()
-    {
-        //we could imagine this is much more complicated
-        //for example that path is provided by the user and validated
-        return "names.txt";
-    }
-}
-
-// Extracted Format method to create a NamesFormatter class
-class NamesFormatter
-{
-    public string Format(List<string> names)
-    {
-        return string.Join(Environment.NewLine, names);
-    }
-}

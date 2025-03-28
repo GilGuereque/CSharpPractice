@@ -1,2 +1,11 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿Season firstSeason = Season.Spring;
+Console.WriteLine(firstSeason);
+Console.ReadKey();
+
+public enum Season
+{
+    Spring,
+    Summer,
+    Autumn,
+    Winter
+}

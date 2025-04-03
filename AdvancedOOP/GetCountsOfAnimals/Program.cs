@@ -27,13 +27,13 @@ public class Exercise
 
 public class Animal
 {
-    public virtual int NumberOfLegs { get; } = 4;
+    //public virtual int NumberOfLegs { get; } = 4;
 }
 
 public class Lion
     : Animal
 {
-    public override int NumberOfLegs { get; } = 4;
+    //public override int NumberOfLegs { get; } = 4;
 }
 
 public class Tiger

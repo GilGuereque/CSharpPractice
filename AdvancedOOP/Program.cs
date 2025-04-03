@@ -81,7 +81,7 @@ public class Cheddar : Ingredient
 
 public class TomatoSauce : Ingredient
 {
-    public string Name => "Tomato Sauce";
+    public override string Name => "Tomato Sauce";
     public int TomatosIn100Grams { get; }
 }
 

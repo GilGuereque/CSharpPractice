@@ -1,4 +1,4 @@
-﻿//Polymorphism & Inheritance
+﻿////Polymorphism & Inheritance
 //var pizza = new Pizza();
 //pizza.AddIngredient(new Cheddar());
 //pizza.AddIngredient(new Mozzarella());
@@ -24,17 +24,26 @@
 //Console.WriteLine(cheddar.ProtectedMethod());
 //Console.WriteLine(cheddar.PrivateMethod());
 
-var ingredients = new List<Ingredient>
-{
-    new Cheddar(),
-    new Mozzarella(),
-    new TomatoSauce()
-};
+//var ingredients = new List<Ingredient>
+//{
+//    new Cheddar(),
+//    new Mozzarella(),
+//    new TomatoSauce()
+//};
 
-foreach(Ingredient ingredient in ingredients)
-{
-    Console.WriteLine(ingredient.Name);
-}
+//foreach(Ingredient ingredient in ingredients)
+//{
+//    Console.WriteLine(ingredient.Name);
+//}
+
+var ingredient = new Ingredient(1);
+
+var cheddar = new Cheddar(2, 12);
+Console.WriteLine(cheddar);
+
+//var cheddar = new Cheddar();
+//Console.WriteLine(cheddar);
+
 
 Console.ReadKey();
 
@@ -51,6 +60,17 @@ public class Pizza
 
 public class Ingredient
 {
+    public Ingredient(int priceIfExtraTopping)
+    {
+        Console.WriteLine(
+            "Constructor from the Ingredient class");
+        PriceIfExtraTopping = priceIfExtraTopping;
+    }
+
+    public int PriceIfExtraTopping { get;  }
+
+    public override string Tostring() => Name;
+    
     public virtual string Name { get; } = "Some ingredient";
     
     public int PublicField;
@@ -67,12 +87,25 @@ public class Ingredient
 
 public class Cheese : Ingredient
 {
-
+    public Cheese(int priceIfExtraTopping) : base(priceIfExtraTopping)
+    {
+        
+    }
 }
 
 public class Cheddar : Cheese
 {
-    public override string Name => "Cheddar cheese";
+    public Cheddar(int priceIfExtraTopping, int agedForMonths) 
+        : base(priceIfExtraTopping)
+    {
+        AgedForMonths = agedForMonths;
+        Console.WriteLine(
+            "Constructor from the Cheddar class");
+    }
+
+    public override string Name =>
+        $"{base.Name}, more specifically, " +
+        $"a Cheddar cheese aged for {AgedForMonths} months";
 
     public int AgedForMonths { get; }
 
@@ -86,19 +119,29 @@ public class Cheddar : Cheese
 
 public class TomatoSauce : Ingredient
 {
+    public TomatoSauce(int priceIfExtraTopping) : base(priceIfExtraTopping)
+    {
+        
+    }
+
     public override string Name => "Tomato Sauce";
     public int TomatosIn100Grams { get; }
 }
 
 public class Mozzarella : Cheese
 {
+    public Mozzarella(int priceIfExtraTopping) : base(priceIfExtraTopping)
+    {
+        
+    }
+
     public override string Name => "Mozzarella";
     public bool IsLight { get; }
 }
 
 public class Animal
 {
-    protected string MakeNoise() => "Roar";
+    public virtual string MakeNoise() => "Roar";
 }
 
 public class Tiger : Animal
@@ -110,16 +153,16 @@ public class Tiger : Animal
 public class HousePet : Animal
 {
     public override void MakeSound() =>
-        Console.WriteLine("<noises of happiness when human comes home>")
+        Console.WriteLine("<noises of happiness when human comes home>");
 }
 
 public class Feline : Animal
 {
     public override void MakeSound() =>
-        Console.WriteLine("purr purr")
+        Console.WriteLine("purr purr");
 }
 
-public class DomesticCast : Feline, HousePet
+public class DomesticCat : Feline
 {
     //How could C# engine know which MakeSound method is being called? This is the diamond problem
 }

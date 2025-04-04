@@ -65,7 +65,12 @@ public class Ingredient
         "This method is PRIVATE in the Ingredients class.";
 }
 
-public class Cheddar : Ingredient
+public class Cheese : Ingredient
+{
+
+}
+
+public class Cheddar : Cheese
 {
     public override string Name => "Cheddar cheese";
 
@@ -85,7 +90,7 @@ public class TomatoSauce : Ingredient
     public int TomatosIn100Grams { get; }
 }
 
-public class Mozzarella : Ingredient
+public class Mozzarella : Cheese
 {
     public override string Name => "Mozzarella";
     public bool IsLight { get; }
@@ -100,4 +105,21 @@ public class Tiger : Animal
 {
     public string MakeTigerNoise() =>
         MakeNoise() + "!!!";
+}
+
+public class HousePet : Animal
+{
+    public override void MakeSound() =>
+        Console.WriteLine("<noises of happiness when human comes home>")
+}
+
+public class Feline : Animal
+{
+    public override void MakeSound() =>
+        Console.WriteLine("purr purr")
+}
+
+public class DomesticCast : Feline, HousePet
+{
+    //How could C# engine know which MakeSound method is being called? This is the diamond problem
 }

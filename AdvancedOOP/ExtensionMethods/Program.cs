@@ -12,6 +12,30 @@ Console.WriteLine("Count of lines is "
 Console.WriteLine("Next after Spring is " + Season.Spring.Next());
 Console.WriteLine("Next after Winter is " + Season.Winter.Next());
 
+////abstract error example
+//var bakableDishes = new List<???>
+//{
+//    new Pizza(),
+//    new Panettone()
+//};
+
+//foreach (var bakableDish in bakableDishes)
+//{
+//Console.WriteLine(bakableDish.GetInstructions());
+//}
+
+//public abstract class Dessert { }
+
+//public abstract class Bakeable
+//{
+//    public abstract string GetInstructions();
+//}
+
+//public class Panettone : Dessert, Bakeable
+//{
+
+//}
+
 Console.ReadKey();
 
 //// Coding Exercise solution:

@@ -6,7 +6,7 @@ namespace Polymorphism.Flyables
     {
         void Fly();
     }
-    
+
     public class Bird : IFlyable
     {
         public void Tweet() =>
@@ -22,9 +22,17 @@ namespace Polymorphism.Flyables
             Console.WriteLine("Flying carried by the wind.");
     }
 
-    public class Plane : IFlyable
+    public interface IFeulable
+    {
+        void Fuel();
+    }
+
+    public class Plane : IFlyable, IFeulable
     {
         public void Fly() =>
-            Console.WriteLine("")
+            Console.WriteLine("Flying using jet propulsion.");
+
+        public void Fuel() =>
+            Console.WriteLine("Filling tanks with jet fuel.");
     }
 }

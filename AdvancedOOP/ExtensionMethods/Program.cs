@@ -12,6 +12,28 @@ Console.WriteLine("Count of lines is "
 Console.WriteLine("Next after Spring is " + Season.Spring.Next());
 Console.WriteLine("Next after Winter is " + Season.Winter.Next());
 
+
+Console.ReadKey();
+
+//// Coding Exercise solution:
+//using System;
+
+//namespace Coding.Exercise
+//{
+//    public static class ListExtensions
+//    {
+//        public static List<int> TakeEverySecond(this List<int> list)
+//        {
+//            List<int> result = new List<int>();
+//            for (int i = 0; i < list.Count; i += 2)
+//            {
+//                result.Add(list[i]);
+//            }
+//            return result;
+//        }
+//    }
+//}
+
 ////abstract error example
 //var bakableDishes = new List<???>
 //{
@@ -34,25 +56,4 @@ Console.WriteLine("Next after Winter is " + Season.Winter.Next());
 //public class Panettone : Dessert, Bakeable
 //{
 
-//}
-
-Console.ReadKey();
-
-//// Coding Exercise solution:
-//using System;
-
-//namespace Coding.Exercise
-//{
-//    public static class ListExtensions
-//    {
-//        public static List<int> TakeEverySecond(this List<int> list)
-//        {
-//            List<int> result = new List<int>();
-//            for (int i = 0; i < list.Count; i += 2)
-//            {
-//                result.Add(list[i]);
-//            }
-//            return result;
-//        }
-//    }
 //}

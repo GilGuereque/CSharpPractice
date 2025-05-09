@@ -34,26 +34,34 @@ Console.ReadKey();
 //    }
 //}
 
-////abstract error example
-//var bakableDishes = new List<???>
-//{
-//    new Pizza(),
-//    new Panettone()
-//};
+//abstract error example
+var bakableDishes = new List<IBakeable>
+{
+    new Pizza(),
+    new Panettone()
+};
 
-//foreach (var bakableDish in bakableDishes)
-//{
-//Console.WriteLine(bakableDish.GetInstructions());
-//}
+foreach (var bakableDish in bakableDishes)
+{
+Console.WriteLine(bakableDish.GetInstructions());
+}
 
-//public abstract class Dessert { }
+public abstract class Dessert { }
 
-//public abstract class Bakeable
-//{
-//    public abstract string GetInstructions();
-//}
+public interface IBakeable
+{
+    string GetInstructions();
+}
 
-//public class Panettone : Dessert, Bakeable
-//{
+public class Panettone : Dessert, Bakeable
+{
+    public string GetInstructions() =>
+        Console.WriteLine("Bake at 180 degrees celsius for 35 minutes.");
+}
 
-//}
+public class Pizza : IBakeable
+{
+    public string GetInstructions() =>
+        Console.WriteLine("Bake at 250 degrees celsius for 10 minutes, " +
+            "ideally on a stone");
+}

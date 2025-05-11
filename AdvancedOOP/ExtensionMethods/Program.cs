@@ -53,7 +53,7 @@ public interface IBakeable
     string GetInstructions();
 }
 
-public class Panettone : Dessert, Bakeable
+public class Panettone : Dessert, IBakeable
 {
     public string GetInstructions() =>
         Console.WriteLine("Bake at 180 degrees celsius for 35 minutes.");

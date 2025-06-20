@@ -1,7 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 Console.WriteLine("Hello, World!");
 
-int userCheck = 1;
+int userCheck = 2;
 
 try
 {
@@ -12,7 +12,8 @@ try
 }
 catch (Exception e)
 {
-    Console.WriteLine(e);
+    Console.WriteLine("An exception has occurred");
+    Console.WriteLine(e.Message);
 }
 
 Console.ReadKey();

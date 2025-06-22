@@ -1,20 +1,20 @@
 ﻿// See https://aka.ms/new-console-template for more information
 Console.WriteLine("Hello, World!");
 
-int userCheck = 2;
+//int userCheck = 2;
 
-try
-{
-    if (userCheck == 1)
-    {
-        Console.WriteLine("The first try has succeeded.");
-    }
-}
-catch (Exception e)
-{
-    Console.WriteLine("An exception has occurred");
-    Console.WriteLine(e.Message);
-}
+//try
+//{
+//    if (userCheck == 1)
+//    {
+//        Console.WriteLine("The first try has succeeded.");
+//    }
+//}
+//catch (Exception e)
+//{
+//    Console.WriteLine("An exception has occurred");
+//    Console.WriteLine(e.Message);
+//}
 
 
 // Try Catch Finally Practice
@@ -25,9 +25,9 @@ try
     int number = ParseStringToInt(input);
     Console.WriteLine("String successfully parsed, the result is " + number);
 }
-catch
+catch(Exception ex)
 {
-    Console.WriteLine("An exception was thrown.");
+    Console.WriteLine("An exception was thrown. Exception message: " + ex.Message);
 }
 finally
 {

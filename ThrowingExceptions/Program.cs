@@ -23,6 +23,8 @@ bool CheckIfContains(int value, int[] numbers)
 
 //}
 
+//RecursiveMethod; // calling the recursive method
+
 Console.ReadKey();
 
 // Recursive method simple example

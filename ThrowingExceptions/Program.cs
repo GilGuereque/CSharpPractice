@@ -25,6 +25,15 @@ bool CheckIfContains(int value, int[] numbers)
 
 RecursiveMethod(1); // calling the recursive method
 
+try
+{
+    var result = IsFirstElementPositive(null);
+}
+catch(ArgumentNullException ex)
+{
+
+}
+
 Console.ReadKey();
 
 // Recursive method simple example
@@ -43,6 +52,28 @@ int GetFirstElement(IEnumerable<int> numbers)
     }
 
     throw new Exception("The collection cannot be empty.");
+}
+
+bool IsFirstElementPositive(IEnumerable<int> numbers)
+{
+    try
+    {
+        var firstElement = GetFirstElement(numbers);
+        return firstElement > 0;
+    }
+    catch(InvalidOperationException ex)
+    {
+        Console.WriteLine("The collection is empty!");
+        return true;
+    }
+    catch(NullReferenceException ex)
+    {
+        Console.WriteLine("Sorry! The application experienced " +
+            "an unexpected error.");
+        //throw; //ex;
+        throw new ArgumentNullException("The collection is null.", ex);
+    }
+
 }
 
 

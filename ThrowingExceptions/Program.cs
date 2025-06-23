@@ -25,6 +25,13 @@ bool CheckIfContains(int value, int[] numbers)
 
 Console.ReadKey();
 
+// Recursive method simple example
+void RecursiveMethod()
+{
+    Console.WriteLine("I'm going to call myself");
+    RecursiveMethod; // this will keep calling itself on and on ultimately ending in a stackoverflow exception
+}
+
 int GetFirstElement(IEnumerable<int> numbers)
 {
     foreach(var number in numbers)

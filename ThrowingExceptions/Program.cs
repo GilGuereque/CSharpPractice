@@ -1,13 +1,13 @@
-﻿var invalidPersonObject = new Person("", -100);
+﻿//var invalidPersonObject = new Person("", -100);
 
-var emptyCollection = new List<int>();
-var firstElement = GetFirstElement(emptyCollection);
-var firstUsingLinq = emptyCollection.First();
+//var emptyCollection = new List<int>();
+//var firstElement = GetFirstElement(emptyCollection);
+//var firstUsingLinq = emptyCollection.First();
 
-var numbers = new int[] { 1, 2, 3 };
-var fourth = numbers[3];
+//var numbers = new int[] { 1, 2, 3 };
+//var fourth = numbers[3];
 
-bool has7 = CheckIfContains(7, numbers);
+//bool has7 = CheckIfContains(7, numbers);
 
 bool CheckIfContains(int value, int[] numbers)
 {
@@ -23,15 +23,16 @@ bool CheckIfContains(int value, int[] numbers)
 
 //}
 
-//RecursiveMethod; // calling the recursive method
+RecursiveMethod(1); // calling the recursive method
 
 Console.ReadKey();
 
 // Recursive method simple example
-void RecursiveMethod()
+void RecursiveMethod(int counter)
 {
-    Console.WriteLine("I'm going to call myself");
-    RecursiveMethod; // this will keep calling itself on and on ultimately ending in a stackoverflow exception
+    Console.WriteLine("I'm going to call myself. Counter is: " + counter);
+    if (counter < 10)
+    RecursiveMethod(counter + 1); // this will keep calling itself on and on ultimately ending in a stackoverflow exception
 }
 
 int GetFirstElement(IEnumerable<int> numbers)

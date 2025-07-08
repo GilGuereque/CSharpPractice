@@ -20,3 +20,29 @@ catch (FormatException ex)
         "Wrong format. Input string is not parsable to int. " +
         "Exception message: " + ex.Message);
 }
+
+// HTTP request example
+try
+{
+    var dataFromWeb = SendHttpRequest("www.address.com/get/someResource");
+}
+catch (HttpRequestException ex) when (ex.Message == "403")
+{
+    Console.WriteLine("It was forbidden to access the resource.");
+    throw;
+}
+catch (HttpRequestException ex) when (ex.Message == "404")
+{
+    Console.WriteLine("The resource was not found.");
+    throw;
+}
+catch (HttpRequestException ex) when (ex.Message.StartsWith("4")) // this would still be handled after the fact of the first two catch blocks due to the specifics of those two
+{
+    Console.WriteLine("There is some kind of client error.");
+    throw;
+}
+catch (HttpRequestException ex) when (ex.Message == "500")
+{
+    Console.WriteLine("The server has experience an internal error.");
+    throw;
+}

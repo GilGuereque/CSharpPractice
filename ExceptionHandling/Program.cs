@@ -309,3 +309,36 @@ return;
 
 NegativeNumber;
 Console.WriteLine("The number is negative.");
+
+
+// logging with global catch block
+var logger = new Logger();
+try
+{
+    Run();
+}
+catch(Exception ex)
+{
+    Console.WriteLine(
+        "Sorry. The application has experience an error. The error message: "
+        + ex.Message);
+    logger.Log(ex);
+}
+Console.ReadKey();
+
+void Run()
+{
+    try
+    {
+        Console.WriteLine("Enter a word");
+        var word = Console.ReadLine();
+        Console.WriteLine("Count of characters is " + word.Length);
+    }
+    catch(NullReferenceException ex)
+    {
+        Console.WriteLine(
+            "The input is null, and its length cannot be calculated. " +
+            "Did you press CTRL+Z in the console?");
+        throw;
+    }
+}

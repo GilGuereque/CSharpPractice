@@ -297,3 +297,15 @@ static void Process1(String[] userEntries)
         }
     }
 }
+
+// goto statement code:
+if (number < 0)
+{
+    goto NegativeNumber;
+}
+
+Console.WriteLine("The number is positive or zero.");
+return;
+
+NegativeNumber;
+Console.WriteLine("The number is negative.");

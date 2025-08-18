@@ -326,6 +326,7 @@ catch(Exception ex)
 }
 Console.ReadKey();
 
+// Using NullReferenceException
 void Run()
 {
     try
